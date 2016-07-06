@@ -16,3 +16,6 @@ wp-content/plugins/hello.php
 /sitemap.xml
 /sitemap.xml.gz
 
+_system/_bower.cache
+_system/node_modules
+_system/.sass-cache
