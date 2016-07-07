@@ -9,23 +9,23 @@
 
     // A.2.1. PROJECTS ---------------------------------------------------------------------------------------------
 
-    function artists() {
+    function team() {
       $labels = array(
-        'Title'              => _x( 'Artists', 'post type general name' ),
-        'singular_name'      => _x( 'Artist', 'post type singular name' ),
-        'add_new'            => _x( 'Add New', 'Artist' ),
-        'add_new_item'       => __( 'Add New Artist' ),
-        'edit_item'          => __( 'Edit Artist' ),
-        'new_item'           => __( 'New Artist' ),
-        'all_items'          => __( 'All Artists' ),
-        'view_item'          => __( 'View Artist' ),
+        'Title'              => _x( 'Team', 'post type general name' ),
+        'singular_name'      => _x( 'Team Member', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Team Member' ),
+        'add_new_item'       => __( 'Add New Team Member' ),
+        'edit_item'          => __( 'Edit Team' ),
+        'new_item'           => __( 'New Team Member' ),
+        'all_items'          => __( 'All Team Members' ),
+        'view_item'          => __( 'View Team' ),
         'parent_item_colon'  => '',
-        'menu_name'          => 'Artists'
+        'menu_name'          => 'Our Team'
       );
 
       $args = array(
         'labels'         => $labels,
-        'description'   => 'A list of Artists',
+        'description'   => 'A list of Team Members',
         'public'        => true,
         'menu_position' => 4,
         'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
@@ -33,10 +33,10 @@
 
       );
         
-      register_post_type( 'artists', $args ); 
+      register_post_type( 'team', $args ); 
     }
 
-    add_action( 'init', 'artists' );
+    add_action( 'init', 'team' );
 
     // A.2.1. End --------------------------------------------------------------------------------------------------
 

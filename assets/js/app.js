@@ -110,15 +110,15 @@ var currentContent = '';
 
     $(document).scroll(function(){
 
-        if (document.documentElement.clientWidth > 640) {
+        if (document.documentElement.clientWidth > 540) {
 
             // Hide the logo, and show as you scroll
             if($(this).scrollTop() > t)
             {   
-                $('.logo').css({"display":"block"});
+                $('#masthead').addClass('grow');
 
             }else{
-                $('.logo').css({"display":"none"});
+                $('#masthead').removeClass('grow');
             }
 
 

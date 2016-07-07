@@ -4,46 +4,39 @@
 
 // A.1. HOME -----------------------------------------------------------------------------------------------------
 	
-#section-casestudies {
+#section-team {
 
-    background: #ecf0f1;
+    background: $kd-royal;
 
     // F.1. Components
 
-    //
+    .figure-teamTop {
+        
+        background: url(../images/services/services-top-icon.png) top center no-repeat;
+
+        // RESPONSIVE
+        margin-top: -60px;
+        padding: 90px 0;
+        // RESPONSIVE
+    }			
 
     .section-header {
         
         margin-bottom: $baseline-large;
         
+        h2 { color: $ia-grey10; }
+        
         .icon {
             
-            @include icon (100px, 100px, $ia-grey90);   
+            @include icon (100px, 100px, $ia-grey20);   
             
         }
 
         //
 
         span {
-            border-top: 5px dotted $ia-red;
+            border-top: 5px dotted $ia-grey20;
             padding: 0 40px;
-        }
-    }
-
-    //
-
-    .casestudies-group	{
-
-        @include clearfix();
-        text-align: center; 
-
-        .casestudies-item	{
-            @extend .one-half;
-            @extend .desk--one-quarter;
-            @extend .desk-wide--one-sixth;
-            padding: 0;
-            position: relative;
-
         }
     }
 }

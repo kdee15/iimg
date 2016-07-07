@@ -1,6 +1,6 @@
 <!-- C.2.7. CONTACT US -->
 
-<section class="section section-bobContact" id="section-contact">
+<section class="section" id="section-contact">
 
     <div class="container">
 
