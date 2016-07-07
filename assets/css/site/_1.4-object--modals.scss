@@ -12,7 +12,7 @@
     
     height: auto;
     margin: 0 auto;
-    border-radius: 100%;
+    border-radius: 100%; 
     
 }
 
@@ -61,8 +61,7 @@
 // A.1.4. END
 
 // A.1.5. END
-
-		
+	
 .modalClose {
 
     position: absolute;
@@ -76,6 +75,7 @@
     z-index: 999;
     border-radius: 100%;
     border: solid 1px $white;
+    
     span {
         display: block;
         text-align: center;
