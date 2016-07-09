@@ -18,7 +18,8 @@
             "order" : [
                 
                 "modernizr.js",
-                "jquery.js"
+                "jquery.js",
+                "jquery.jcarousel.min.js"
                 
 
             ],

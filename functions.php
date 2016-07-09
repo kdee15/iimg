@@ -3,11 +3,42 @@
     // Add RSS links to <head> section
     automatic_feed_links();
 
+// A.2 CUSTOM CONTENT TYPES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+    // A.2.1. HOMEPAGE CAROUSEL ---------------------------------------------------------------------------------------
 
-// A.2 CUSTOM CONTENT TYPES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    function carousel() {
+      $labels = array(
+        'Title'              => _x( 'Carousel', 'post type general name' ),
+        'singular_name'      => _x( 'Carousel Pics', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Carousel Pic' ),
+        'add_new_item'       => __( 'Add New Carousel Pic' ),
+        'edit_item'          => __( 'Edit Carousel' ),
+        'new_item'           => __( 'New Carousel Pic' ),
+        'all_items'          => __( 'All Carousel Pics' ),
+        'view_item'          => __( 'View Carousel' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Carousel'
+      );
 
-    // A.2.1. PROJECTS ---------------------------------------------------------------------------------------------
+      $args = array(
+        'labels'         => $labels,
+        'description'   => 'A list of Carousel Pics',
+        'public'        => true,
+        'menu_position' => 3,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+        'has_archive'   => true,
+
+      );
+        
+      register_post_type( 'carousel', $args ); 
+    }
+
+    add_action( 'init', 'carousel' );
+
+    // A.2.1. End --------------------------------------------------------------------------------------------------
+
+    // A.2.1. TEAM -------------------------------------------------------------------------------------------------
 
     function team() {
       $labels = array(
@@ -40,11 +71,40 @@
 
     // A.2.1. End --------------------------------------------------------------------------------------------------
 
+    // A.2.1. TEAM CAROUSEL ----------------------------------------------------------------------------------------
+
+    function team_carousel() {
+      $labels = array(
+        'Title'              => _x( 'Team Carousel', 'post type general name' ),
+        'singular_name'      => _x( 'Team Carousel Pics', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Team Carousel Pic' ),
+        'add_new_item'       => __( 'Add New Team Carousel Pic' ),
+        'edit_item'          => __( 'Edit Team Carousel' ),
+        'new_item'           => __( 'New Team Carousel Pic' ),
+        'all_items'          => __( 'All Team Carousel Pics' ),
+        'view_item'          => __( 'View Team Carousel' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Team Carousel'
+      );
+
+      $args = array(
+        'labels'         => $labels,
+        'description'   => 'A list of Team Carousel Pics',
+        'public'        => true,
+        'menu_position' => 5,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+        'has_archive'   => true,
+
+      );
+        
+      register_post_type( 'team_carousel', $args ); 
+    }
+
+    add_action( 'init', 'team_carousel' );
+
+    // A.2.1. End --------------------------------------------------------------------------------------------------
+
 // A.2 END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-
-
-
 
     
     // Load jQuery
