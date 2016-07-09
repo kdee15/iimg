@@ -1,17 +1,37 @@
 
 <!-- C.2.0. WE ARE DIFFERENT -->
 
-<section class="section section-home">
+<section class="section-home">
+        
+    <div class="jcarousel-wrapper">
+        <div class="jcarousel">
 
-    <div class="container">
+            <!-- C.2.6.2. CAROUSEL LIST -->
 
-        <!-- C.2.0.4. Scroll Indicator -->
+            <ul>
 
-        <figure class="figure-downArrow">
+            <?php
+                $args = array(
+                    'post_type' => 'carousel',
+                );
+                $carousel = new WP_Query( $args );
+                if( $carousel->have_posts() ) {
+                  while( $carousel->have_posts() ) {
+                    $carousel->the_post();
+                    ?>
 
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/front/front-arrow-button.png" alt="down arrow">
+                    <li><img src="<?php the_field('carousel_image') ?>" alt="carousel image" class="carousel-pic" /></li>
 
-        </figure>
+                    <?php
+                  }
+                }
+            ?>
+
+            </ul>
+
+        </div>
+
+        <p class="jcarousel-pagination"></p>
 
     </div>
 
