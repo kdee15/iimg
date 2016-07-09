@@ -48,7 +48,7 @@
   "resolutions": {
     "angular": "~1.4.x",
     "angular-sanitize": "~1.4.6",
-    "angular-ui-router": "~0.2.15"
+    "angular-ui-router": "~0.2.15",
     "konstruct.angular": "~1.1.0",
     "ng-videosharing-embed": "~0.3.4",
     "ng-video-preview": "*",

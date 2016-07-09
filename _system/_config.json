@@ -10,7 +10,8 @@
                 
                 "modernizr/modernizr.js",
                 "jquery/dist/jquery.js",
-                "html5shiv-master/dist/html5shiv.min.js"
+                "html5shiv-master/dist/html5shiv.min.js",
+                "jcarousel/dist/jquery.jcarousel.min.js"
 
             ],
             
