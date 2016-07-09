@@ -14,7 +14,7 @@
             <span></span>
         </section>
 
-        <!-- C.2.6.2. Case Study List -->
+        <!-- C.2.6.2. Team List -->
         
         <ul class="grid-group">
             
@@ -49,6 +49,43 @@
         ?>
 
         </ul>
+        
+        <!-- C.2.6.2. Teram Carousel List -->
+        
+        
+        <div class="jcarousel-wrapper">
+            <div class="jcarousel">
+
+                <!-- C.2.6.2. CAROUSEL LIST -->
+
+                <ul>
+
+                <?php
+                    $args = array(
+                        'post_type' => 'team_carousel',
+                    );
+                    $carousel = new WP_Query( $args );
+                    if( $carousel->have_posts() ) {
+                      while( $carousel->have_posts() ) {
+                        $carousel->the_post();
+                        ?>
+
+                        <li><img src="<?php the_field('photo') ?>" alt="carousel image" class="carousel-pic" /></li>
+
+                        <?php
+                      }
+                    }
+                ?>
+
+                </ul>
+
+            </div>
+
+            <p class="jcarousel-pagination"></p>
+
+        </div>
+        
+        
 
     </div>                 
 

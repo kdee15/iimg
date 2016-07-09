@@ -1996,7 +1996,7 @@ a {
 /** Carousel Pagination **/
 .jcarousel-pagination {
   position: absolute;
-  bottom: 2%;
+  bottom: 15%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
