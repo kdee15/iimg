@@ -14,37 +14,21 @@
 // E.2. containing div elements
 
 #section-services {
+    
+    background: $kd-mauve;
 
     .section-header {
 
         h2 {
-            color: $ia-grey40;
+            color: $ia-grey90;
             // RESPONSIVE
             margin-bottom: $baseline-large;
             // RESPONSIVE
             line-height: normal;
         }
-
-        p {
-            color: #929497;
-            // RESPONSIVE
-            margin-bottom: 65px;
-            // RESPONSIVE
-        }					
+					
     }
-
-    //
-
-    background: $black;
-    background-size: cover;
-    color: #818181;
     
-    // RESPONSIVE
-    padding: 0 0 40px;
-    // RESPONSIVE
-
-    // E.2.1. Components
-
 
     //
 
@@ -57,52 +41,18 @@
         // RESPONSIVE
     }			
 
-    //
-
-    .services-group	{
-
-        text-align: center;
+    // E.1. Client Logos
+    
+    .grid__logos {
         
-        .icon {
-            
-            @include icon (80px, 80px, $ia-grey10);
-            
-            .icon {
-
-                text-align: center;
-                border: 2px solid $ia-red;
-                border-radius: 100%;
-                padding: $baseline;
-                
-            }
-        }
-
-        .services-item	{
-            
-            @extend .one-half;
-            @extend .tablet--one-third;
-            @extend .desk--one-third;
-            text-align: center;
-
-            // RESPONSIVE
-            margin: 20px 0 0 0;
-            // RESPONSIVE
-
-            h4 {
-                color: $white;
-            }
-
-            span {
-                font-size: 0.85em;
-                color: #929497;
-            }
-
-        }
-
+        @extend .mobile--one-half;
+        @extend .feature--one-half;
+        
+        position: relative;
+        
+        img { width: 90%; height: auto; margin: $baseline auto; }
+        
     }
-
-
-    // E.1. End			
 }
 
 // A.2. END -----------------------------------------------------------------------------------------------------------

@@ -27,7 +27,7 @@
                 $logos->the_post();
                 ?>
             
-                <li class="grid-item one-quarter">
+                <li class="grid__logos one-quarter">
                     
                     <img src="<?php the_field('client_logo') ?>" alt="client logo" class="mainImg" />
                     
