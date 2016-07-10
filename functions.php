@@ -1,7 +1,11 @@
 <?php
-    
+
+// A.1 GLOBAL SETTINGS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
     // Add RSS links to <head> section
     automatic_feed_links();
+
+// A.1 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.2 CUSTOM CONTENT TYPES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -36,9 +40,42 @@
 
     add_action( 'init', 'carousel' );
 
-    // A.2.1. End --------------------------------------------------------------------------------------------------
+    // A.2.1. End -----------------------------------------------------------------------------------------------------
 
-    // A.2.1. TEAM -------------------------------------------------------------------------------------------------
+    // A.2.1. HOMEPAGE ABout Copy -------------------------------------------------------------------------------------
+
+    function about() {
+      $labels = array(
+        'Title'              => _x( 'About', 'post type general name' ),
+        'singular_name'      => _x( 'About', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'About' ),
+        'add_new_item'       => __( 'Add New About' ),
+        'edit_item'          => __( 'Edit About' ),
+        'new_item'           => __( 'New About' ),
+        'all_items'          => __( 'All About' ),
+        'view_item'          => __( 'View About' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'About'
+      );
+
+      $args = array(
+        'labels'         => $labels,
+        'description'   => 'A list of About',
+        'public'        => true,
+        'menu_position' => 3,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+        'has_archive'   => true,
+
+      );
+        
+      register_post_type( 'about', $args ); 
+    }
+
+    add_action( 'init', 'about' );
+
+    // A.2.1. End -----------------------------------------------------------------------------------------------------
+
+    // A.2.1. TEAM ----------------------------------------------------------------------------------------------------
 
     function team() {
       $labels = array(
@@ -69,9 +106,9 @@
 
     add_action( 'init', 'team' );
 
-    // A.2.1. End --------------------------------------------------------------------------------------------------
+    // A.2.1. End -----------------------------------------------------------------------------------------------------
 
-    // A.2.1. TEAM CAROUSEL ----------------------------------------------------------------------------------------
+    // A.2.1. TEAM CAROUSEL -------------------------------------------------------------------------------------------
 
     function team_carousel() {
       $labels = array(
@@ -102,10 +139,77 @@
 
     add_action( 'init', 'team_carousel' );
 
-    // A.2.1. End --------------------------------------------------------------------------------------------------
+    // A.2.1. End -----------------------------------------------------------------------------------------------------
 
-// A.2 END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+    // A.2.1. CLIENT LOGOS --------------------------------------------------------------------------------------------
 
+    function services() {
+      $labels = array(
+        'Title'              => _x( 'Services', 'post type general name' ),
+        'singular_name'      => _x( 'Service', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Service' ),
+        'add_new_item'       => __( 'Add New Service' ),
+        'edit_item'          => __( 'Edit Services' ),
+        'new_item'           => __( 'New Service' ),
+        'all_items'          => __( 'All Services' ),
+        'view_item'          => __( 'View Service' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Services'
+      );
+
+      $args = array(
+        'labels'         => $labels,
+        'description'   => 'A list of Services',
+        'public'        => true,
+        'menu_position' => 7,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+        'has_archive'   => true,
+
+      );
+        
+      register_post_type( 'services', $args ); 
+    }
+
+    add_action( 'init', 'services' );
+
+    // A.2.1. End -----------------------------------------------------------------------------------------------------
+
+    // A.2.1. CLIENT LOGOS --------------------------------------------------------------------------------------------
+
+    function logos() {
+      $labels = array(
+        'Title'              => _x( 'Logos', 'post type general name' ),
+        'singular_name'      => _x( 'Logo', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Logo' ),
+        'add_new_item'       => __( 'Add New Logo' ),
+        'edit_item'          => __( 'Edit Logos' ),
+        'new_item'           => __( 'New Logo' ),
+        'all_items'          => __( 'All Logos' ),
+        'view_item'          => __( 'View Logo' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Client Logos'
+      );
+
+      $args = array(
+        'labels'         => $labels,
+        'description'   => 'A list of Team Carousel Pics',
+        'public'        => true,
+        'menu_position' => 6,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+        'has_archive'   => true,
+
+      );
+        
+      register_post_type( 'logos', $args ); 
+    }
+
+    add_action( 'init', 'logos' );
+
+    // A.2.1. End -----------------------------------------------------------------------------------------------------
+
+// A.2 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.3 WIDGETS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
     
     // Load jQuery
     if ( !is_admin() ) {
@@ -133,5 +237,19 @@
             'after_title'   => '</h2>'
         ));
     }
+    
+    if (function_exists('register_sidebar')) {
+        register_sidebar(array(
+            'name' => 'about us widget',
+            'id'   => 'about-widget',
+            'description'   => 'About Us Content Widget.',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2>',
+            'after_title'   => '</h2>'
+        ));
+    }
+
+// A.3 END ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 ?>

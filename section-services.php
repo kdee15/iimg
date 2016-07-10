@@ -11,26 +11,34 @@
             <p>Big House voices is Voice Over agency based in Cape Town. We offer voice over solutions for TV, Radio and Film.</p>
         </section>
 
-        <!-- C.2.4.2. services grid -->
 
-        <ul class="grid-group services-group no-mobile-inline">
-            <li class="grid-item services-item strategy">
-                <figure class="icon"><?php include ( 'assets/includes/icons/icon--fb.html' ); ?></figure>
-                <h4></h4>
-                <span></span>
-            </li>
-            <li class="grid-item services-item research">
-                <figure class="icon"><?php include ( 'assets/includes/icons/icon--fb.html' ); ?></figure>
-                <h4></h4>
-                <span></span>
-            </li>
-            <li class="grid-item services-item ttl">
-                <figure class="icon"><?php include ( 'assets/includes/icons/icon--fb.html' ); ?></figure>
-                <h4></h4>
-                <span></span>
-            </li>
+        <!-- C.2.6.2. Team List -->
+        
+        <ul class="grid">
             
-        </ul>                       
+
+        <?php
+            $args = array(
+                'post_type' => 'logos',
+            );
+            $logos = new WP_Query( $args );
+            if( $logos->have_posts() ) {
+              while( $logos->have_posts() ) {
+                $logos->the_post();
+                ?>
+            
+                <li class="grid__logos one-quarter">
+                    
+                    <img src="<?php the_field('client_logo') ?>" alt="client logo" class="mainImg" />
+                    
+                </li>
+            
+                <?php
+              }
+            }
+        ?>
+
+        </ul>                    
 
     </div>
 

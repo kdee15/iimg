@@ -33,6 +33,10 @@
     
     .figure__our-vision {
         
+        @extend .tablet--one-whole;
+        @extend .mobile--one-whole;
+        @extend .feature--one-whole;
+        
         margin: 0;
         
         img { width: 100%; height: auto; }
@@ -43,21 +47,25 @@
     
     .our-vision {
         
-        p { text-align: left; margin-left: $baseline; }
+        @extend .tablet--one-whole;
+        @extend .mobile--one-whole;
+        @extend .feature--one-whole;
+        
+        p { text-align: left; margin-left: $baseline; color: $white; }
         
     }
 
 
 .figure-teamBottom {
-background: url(../images/site/staff-footer.png) top center no-repeat;
+    
+    background: url(../images/site/staff-footer.png) top center no-repeat;
 
-// RESPONSIVE
-padding: 30px 0;
-margin: 60px 0 -60px 0;
-// RESPONSIVE
+    // RESPONSIVE
+    padding: 30px 0;
+    margin: 60px 0 -60px 0;
+    // RESPONSIVE
 
 }
-
 
 // B.1. End
 
@@ -92,15 +100,7 @@ margin: 60px 0 -60px 0;
                 // RESPONSIVE
             }				
         }
-
-        //B.1.2. Objective Icon
-
-        //B.1.3. Objective Grid
-		
-        // B.1. End
     }
-    // A.1.1. END
-    
 }
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -129,14 +129,7 @@ margin: 60px 0 -60px 0;
                 // RESPONSIVE
             }				
         }
-
-        //B.1.2. Objective Icon
-
-        //B.1.3. Objective Grid
-
-
     }
-
 }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -150,14 +143,7 @@ margin: 60px 0 -60px 0;
     #section-our-vision {
 
         .container { margin: 0 $baseline-small; }   
-    
-        //B.1.3. Our Vision Text
 
-        .our-vision {
-
-            p { font-size: $small; }
-
-        }
     }
 
     // A.1.1. END
@@ -175,7 +161,14 @@ margin: 60px 0 -60px 0;
     #section-our-vision {
 
         .container { margin: 0 auto; }   
+    
+        //B.1.3. Our Vision Text
 
+        .our-vision {
+
+            p { font-size: $small; }
+
+        }
     }
 
     // A.1.1. END
