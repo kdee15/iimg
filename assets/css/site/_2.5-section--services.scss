@@ -41,12 +41,16 @@
             @extend .mobile--one-whole;
             @extend .feature--one-whole;
             
-            h1 { position: absolute; top: 5%; left: 5%; color: $white; text-shadow: 0 0 10px $ia-grey80; }
-            
-            .figure__image { 
-                margin: 0;
-                img { width: 100%; height: auto; }
+            h1 { 
+                position: absolute; 
+                top: 5%; 
+                left: 5%; 
+                color: $white; 
+                text-shadow: 0 0 10px $ia-grey80; 
+                line-height: normal;
             }
+            
+            .figure__image { margin: 0; img { width: 100%; height: auto; }}
         }
     }
     
@@ -63,18 +67,16 @@
             li {
                 
                 @extend .grid__item;
-                @extend .one-quarter;
+                @extend .one-tenth;
                 
                 background: $kd-royal;
                 padding: $baseline-small;
                 color: $white;
+                text-align: center;
                 
             }
-            
         }
-        
     }
-    
     
     // E.1. Client Logos
     

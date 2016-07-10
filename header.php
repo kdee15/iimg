@@ -60,8 +60,8 @@
                 <!-- C.1.2. NAV -->
                 <ul>
                     <li><a class="textLink" href="#section-our-vision">Our Vision</a></li>
-                    <li><a class="textLink" href="#section-services">Meet the Team</a></li>
-                    <li><a class="textLink" href="#section-casestudies">We Offer</a></li>
+                    <li><a class="textLink" href="#section-team">Meet the Team</a></li>
+                    <li><a class="textLink" href="#section-services">We Offer</a></li>
                     <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
                     <li><a class="imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
                     <li><a class="imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Facebook"></a></li>
