@@ -7,10 +7,63 @@
         <!-- C.2.4.1. Page Title -->
 
         <section class="section-header">
-            <h2>services</h2>
-            <p>Big House voices is Voice Over agency based in Cape Town. We offer voice over solutions for TV, Radio and Film.</p>
+            <h2>We offer</h2>
         </section>
 
+        <!-- C.2.6.2. SERVICES DATA -->
+
+        <?php
+            $args = array(
+                'post_type' => 'services',
+            );
+            $services = new WP_Query( $args );
+            if( $services->have_posts() ) {
+              while( $services->have_posts() ) {
+                $services->the_post();
+                ?>
+
+                <p><?php the_field('intro') ?></p>
+
+                <section class="services grid">
+                    
+                    <aside class="service one-half">
+                        <h1><?php the_field('title_1') ?></h1>
+                        <figure class="figure__image">
+                            <img src="<?php the_field('image_1') ?>" alt="service image" class="service-imgae" />
+                        </figure>
+                    </aside>
+
+                    <aside class="service one-half">
+                        <h1><?php the_field('title_2') ?></h1>
+                        <figure class="figure__image">
+                            <img src="<?php the_field('image_2') ?>" alt="service image" class="service-imgae" />
+                        </figure>
+                    </aside>
+
+                    <aside class="service one-half">
+                        <h1><?php the_field('title_3') ?></h1>
+                        <figure class="figure__image">
+                            <img src="<?php the_field('image_3') ?>" alt="service image" class="service-imgae" />
+                        </figure>
+                    </aside>
+
+                    <aside class="service one-half">
+                        <h1><?php the_field('title_4') ?></h1>
+                        <figure class="figure__image">
+                            <img src="<?php the_field('image_4') ?>" alt="service image" class="service-imgae" />
+                        </figure>
+                    </aside>
+
+                </section>
+
+                <section class="key-words">
+                    <?php the_content() ?>
+                </section>
+
+                <?php
+              }
+            }
+        ?>
 
         <!-- C.2.6.2. Team List -->
         

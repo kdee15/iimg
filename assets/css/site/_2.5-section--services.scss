@@ -1,4 +1,4 @@
-// 2. SECTION [ 2.5. SERVICES ]  #######################################################################################
+// 2. SECTION [ 2.5. SERVICES ]  ######################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -28,19 +28,54 @@
         }
 					
     }
+
+    // E.1. Intro text
+    // E.1. Services Grid
     
+    .services {
+        
+        .one-half {
 
-    //
-
-    .figure-servicesTop {
-        background: url(../images/services/services-top-icon.png) top center no-repeat;
-
-        // RESPONSIVE
-        margin-top: -60px;
-        padding: 90px 0;
-        // RESPONSIVE
-    }			
-
+            position: relative;
+            
+            @extend .mobile--one-whole;
+            @extend .feature--one-whole;
+            
+            h1 { position: absolute; top: 5%; left: 5%; color: $white; text-shadow: 0 0 10px $ia-grey80; }
+            
+            .figure__image { 
+                margin: 0;
+                img { width: 100%; height: auto; }
+            }
+        }
+    }
+    
+    // E.1. Keywords
+    
+    .key-words {
+        
+        margin: $baseline-large auto;
+        
+        ul {
+            
+            @extend .grid;
+            
+            li {
+                
+                @extend .grid__item;
+                @extend .one-quarter;
+                
+                background: $kd-royal;
+                padding: $baseline-small;
+                color: $white;
+                
+            }
+            
+        }
+        
+    }
+    
+    
     // E.1. Client Logos
     
     .grid__logos {

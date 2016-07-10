@@ -5,9 +5,8 @@
 // A.1. HOME -----------------------------------------------------------------------------------------------------
 
 #section-contact {
-
-    background: $black url(../images/contact/bg-contact.jpg) no-repeat fixed;
-    background-size: cover;
+    
+    background: $kd-royal;
 
     // RESPONSIVE
     padding: 0 0 40px;
@@ -23,68 +22,45 @@
         
         margin-bottom: $baseline-large;
     }
-
-    .figure-map {
-
-        // RESPONSIVE
-        padding: 0 0 60px 0;
-        display: none;
-        // RESPONSIVE
-
-        //
-
-        img {
-            max-width: 100%;
-        }
-
-    }
-
-    .contact-group	{
-
-        text-align: center;
-        color: #D0D0D0;
-
-        .contact-item	{
+    
+    // H.2. Brnaches Grid
+    
+    .section__branches {
+        
+        .branch {
             
-            @extend .one-quarter;
-            @extend .mobile--one-whole;
-            @extend .feature--one-whole;
+            margin-bottom: $baseline;
+            padding-bottom: $baseline;
+            border-bottom: 1px solid $kd-mauve;
             
-            // A.1.5. ICON
+            .figure__image {
+                
+                @extend .mobile--one-whole;
+                @extend .feature--one-whole;
+                margin: 0;
 
-            .icon {
+                img { width: 100%; height: auto; }
 
-                @include icon (80px, 80px, $ia-grey10);
-
-                .icon {
-
-                    text-align: center;
-                    border: 2px solid $ia-red;
-                    border-radius: 100%;
-                    padding: $baseline;
-
+            }
+            
+            .branch-info {
+                
+                @extend .mobile--one-whole;
+                @extend .feature--one-whole;
+                
+                .wrapper { margin: 0 $baseline;
+                    
+                    h3 { margin: 0; margin-bottom: $baseline-small; font-size: $large; color: $white; }
+                    h4 { margin: 0; margin-bottom: $baseline-small; font-size: $medium; color: $kd-mauve; }
+                    p { color: $white; font-size: $normal; margin-bottom: $baseline-small; }
+                
+                    h3, p, div { color: $white; }
                 }
             }
-
-            // A.1.5. END
-
-            margin-bottom: 20px;
-
-            h4 {
-                text-transform: uppercase;
-            }
-
-            span {
-
-                font-size: 0.85em;
-
-            }
             
-            .mail-me { display: block; color: $ia-red; }
         }
-
+        
     }
-
 
     // H.1. End			
 }

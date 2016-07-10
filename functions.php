@@ -141,13 +141,13 @@
 
     // A.2.1. End -----------------------------------------------------------------------------------------------------
 
-    // A.2.1. CLIENT LOGOS --------------------------------------------------------------------------------------------
+    // A.2.1. SERVICES ------------------------------------------------------------------------------------------------
 
     function services() {
       $labels = array(
         'Title'              => _x( 'Services', 'post type general name' ),
         'singular_name'      => _x( 'Service', 'post type singular name' ),
-        'add_new'            => _x( 'Add New', 'Service' ),
+        'add_new'            => __( 'Add New', 'Service' ),
         'add_new_item'       => __( 'Add New Service' ),
         'edit_item'          => __( 'Edit Services' ),
         'new_item'           => __( 'New Service' ),
@@ -204,6 +204,39 @@
     }
 
     add_action( 'init', 'logos' );
+
+    // A.2.1. End -----------------------------------------------------------------------------------------------------
+
+    // A.2.1. CONTACT DETAILS -----------------------------------------------------------------------------------------
+
+    function branches() {
+      $labels = array(
+        'Title'              => _x( 'Branches', 'post type general name' ),
+        'singular_name'      => _x( 'Branch', 'post type singular name' ),
+        'add_new'            => _x( 'Add New', 'Branch' ),
+        'add_new_item'       => __( 'Add New Branch' ),
+        'edit_item'          => __( 'Edit Branch' ),
+        'new_item'           => __( 'New Branch' ),
+        'all_items'          => __( 'All Branches' ),
+        'view_item'          => __( 'View Branch' ),
+        'parent_item_colon'  => '',
+        'menu_name'          => 'Branches'
+      );
+
+      $args = array(
+        'labels'         => $labels,
+        'description'   => 'A list of Branches',
+        'public'        => true,
+        'menu_position' => 8,
+        'supports'      => array( 'title', 'editor', 'thumbnail', 'taxonomies', 'categories', 'media', 'content' ),
+        'has_archive'   => true,
+
+      );
+        
+      register_post_type( 'branches', $args ); 
+    }
+
+    add_action( 'init', 'branches' );
 
     // A.2.1. End -----------------------------------------------------------------------------------------------------
 

@@ -89,6 +89,7 @@
         // B.1. Components
 
         .container { margin: 0 $baseline-small; }  
+        .figure__our-vision { margin-bottom: $baseline-small; }
 
         //B.1.1. page header
 
@@ -117,7 +118,8 @@
 
         // B.1. Components
 
-        .container { margin: 0 $baseline-small; }  
+        .container { margin: 0 $baseline-small; } 
+        .figure__our-vision { margin-bottom: $baseline-small; }
 
         //B.1.1. page header
 
@@ -142,7 +144,8 @@
 
     #section-our-vision {
 
-        .container { margin: 0 $baseline-small; }   
+        .container { margin: 0 $baseline-small; }
+        .figure__our-vision { margin-bottom: $baseline-small; }
 
     }
 
