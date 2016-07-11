@@ -66,7 +66,6 @@ var currentContent = '';
 		currentContent = $(this).attr('name');
 		if($('#'+currentContent).hasClass('on')){
 			$('#'+currentContent).removeClass('on');
-            $("body").removeClass("modal-open");
 		}else{
 			hideAllContent();
 			showCurrentContent(currentContent);
@@ -75,12 +74,10 @@ var currentContent = '';
 
 	function hideAllContent(){
 		$('.toggle-content').removeClass('on');
-        $("body").removeClass("modal-open");
 	};
 	
 	function showCurrentContent(currentContentDiv){
 		$('#'+currentContentDiv).addClass('on');
-        $("body").addClass("modal-open");
 	};	
 			 
 // A.2. END -----------------------------------------------------------------------------------------------------------

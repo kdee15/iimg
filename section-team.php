@@ -16,7 +16,7 @@
 
         <!-- C.2.6.2. Team List -->
         
-        <ul class="grid-group">
+        <ul class="team-list grid">
 
         <?php
             $args = array(
@@ -28,19 +28,14 @@
                 $team->the_post();
                 ?>
             
-                <li class="grid-item view view-tenth">
+                <li class="team card one-quarter">
                     
-                    <img src="<?php the_field('photo') ?>" alt="client logo" class="mainImg" />
+                    <img src="<?php the_field('photo') ?>" alt="client logo" class="toggle-div" name="<?php the_id() ?>" />
                     <h3 class="card-title"><?php the_title(); ?></h3>
                     <p class="card-title"><?php the_field('title') ?></p>
                     
-                    <div class="mask">
-                        <div class="foil">
-                            <p><?php the_content(); ?></p>
-                        </div>
-                    </div>
-                    
                 </li>
+       
             
                 <?php
               }
@@ -48,6 +43,10 @@
         ?>
 
         </ul>
+             
+                <section class="toggle-content" id="<?php the_id() ?>">
+                    <?php the_content(); ?>
+                </section>
         
         <!-- C.2.6.2. Teram Carousel List -->
         
