@@ -28,7 +28,7 @@
                 $team->the_post();
                 ?>
             
-                <li class="one-sixth team-item">
+                <li class="one-fifth team-item">
                     
                     <img src="<?php the_field('photo') ?>" alt="pic" class="toggle-div pic" name="team<?php the_id() ?>" />
                     <img src="<?php the_field('photo_highlight') ?>" alt="pic" class="toggle-div pic-hover" name="team<?php the_id() ?>" />

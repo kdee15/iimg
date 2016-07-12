@@ -48,6 +48,7 @@
             
             position: relative;
             overflow: hidden;
+            @extend .tablet--one-quarter;
             @extend .mobile--one-half;
             @extend .feature--one-half;
             
