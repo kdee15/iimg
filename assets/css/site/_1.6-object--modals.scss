@@ -30,6 +30,11 @@
     top: 0;
     background: rgba($black, 0.9);
     z-index: 10;
+    
+    h2 { color: $white; margin: 0; margin-top: $baseline-small; }
+    h3 { color: $white; margin: 0; margin-bottom: $baseline; }
+    
+    .copy { p { color: $white; font-size: $small; line-height: normal; }}
 
 }
 
@@ -108,7 +113,10 @@
 
     .modal_img { width: 30%; }
     
-    h2 { font-size: $small; }
+    h2 { font-size: $normal; }
+    h3 { font-size: $normal; }
+    
+    .copy { margin: 0 $baseline; }
     
     // A.1.6. END
 }
@@ -136,7 +144,10 @@
 
     .modal_img { width: 50%; }
     
-    h2 { font-size: $small; }
+    h2 { font-size: $normal; }
+    h3 { font-size: $normal; }
+    
+    .copy { margin: 0 $baseline; }
     
     // A.1.6. END
 }
@@ -163,7 +174,11 @@
 
     .modal_img { width: 30%; }
     
-    h2 { font-size: $small; }
+    
+    h2 { font-size: $medium; }
+    h3 { font-size: $normal; }
+    
+    .copy { margin: 0 $baseline-large; }
     
     // A.1.6. END
 }
@@ -188,9 +203,13 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 50%; }
+    .modal_img { width: 20%; }
     
-    h2 { font-size: $normal; }
+    
+    h2 { font-size: $medium; }
+    h3 { font-size: $normal; }
+    
+    .copy { margin: 0 $baseline-large; }
     
     // A.1.6. END
 }
@@ -215,9 +234,12 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 50%; }
+    .modal_img { width: 15%; }
     
-    h2 { font-size: $normal; }
+    h2 { font-size: $medium; }
+    h3 { font-size: $normal; }
+    
+    .copy { margin: 0 $baseline-large; }
     
     // A.1.6. END
 }

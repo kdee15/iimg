@@ -40,6 +40,32 @@
         }
     }
     
+    // A.1.5. Team List
+    
+    .team-list {
+        
+        .team-item {
+            
+            position: relative;
+            overflow: hidden;
+            @extend .mobile--one-half;
+            @extend .feature--one-half;
+            
+            margin-bottom: $baseline;
+            
+            .pic { width: 90%; margin: 0 auto; border-radius: 100%; margin-bottom: $baseline-small; }
+            h3, h4 { margin: 0; text-align: center; color: $white; }
+            
+            .pic-hover { @include position(absolute, 0); transform: translateX(-100%); }
+            
+            &:hover {
+                
+                .pic-hover { transform: translateX(-50%); left: 50%; width: 90%; border-radius: 100%; }    
+                
+            }
+        }
+    }
+    
     .team-carousel {
         
         width: 60%;

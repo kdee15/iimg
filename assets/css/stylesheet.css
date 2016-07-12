@@ -205,7 +205,7 @@ html, body {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
-  .feature--one-half, .feature--two-quarters, .feature--three-sixths, .feature--four-eighths, .feature--five-tenths, .feature--six-twelfths, #section-services .grid__logos {
+  .feature--one-half, .feature--two-quarters, .feature--three-sixths, .feature--four-eighths, .feature--five-tenths, .feature--six-twelfths, #section-services .grid__logos, #section-team .team-list .team-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
@@ -322,7 +322,7 @@ html, body {
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
-  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths, #section-services .grid__logos {
+  .mobile--one-half, .mobile--two-quarters, .mobile--three-sixths, .mobile--four-eighths, .mobile--five-tenths, .mobile--six-twelfths, #section-services .grid__logos, #section-team .team-list .team-item {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 50%;
         -ms-flex: 0 0 50%;
@@ -2046,6 +2046,18 @@ a {
   top: 0;
   background: rgba(0, 0, 0, 0.9);
   z-index: 10; }
+  .modal h2 {
+    color: #fff;
+    margin: 0;
+    margin-top: 10px; }
+  .modal h3 {
+    color: #fff;
+    margin: 0;
+    margin-bottom: 20px; }
+  .modal .copy p {
+    color: #fff;
+    font-size: 0.75em;
+    line-height: normal; }
 
 .modal__grid {
   padding: 10px;
@@ -2085,7 +2097,11 @@ a {
   .modal .modal_img {
     width: 30%; }
   .modal h2 {
-    font-size: 0.75em; } }
+    font-size: 1em; }
+  .modal h3 {
+    font-size: 1em; }
+  .modal .copy {
+    margin: 0 20px; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .modal .modal__grid .grid-item .inner {
@@ -2093,7 +2109,11 @@ a {
   .modal .modal_img {
     width: 50%; }
   .modal h2 {
-    font-size: 0.75em; } }
+    font-size: 1em; }
+  .modal h3 {
+    font-size: 1em; }
+  .modal .copy {
+    margin: 0 20px; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .modal .modal__grid .grid-item .inner {
@@ -2101,23 +2121,35 @@ a {
   .modal .modal_img {
     width: 30%; }
   .modal h2 {
-    font-size: 0.75em; } }
+    font-size: 1.125em; }
+  .modal h3 {
+    font-size: 1em; }
+  .modal .copy {
+    margin: 0 80px; } }
 
 @media only screen and (min-width: 1024px) {
   .modal .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal .modal_img {
-    width: 50%; }
+    width: 20%; }
   .modal h2 {
-    font-size: 1em; } }
+    font-size: 1.125em; }
+  .modal h3 {
+    font-size: 1em; }
+  .modal .copy {
+    margin: 0 80px; } }
 
 @media only screen and (min-width: 1200px) {
   .modal .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal .modal_img {
-    width: 50%; }
+    width: 15%; }
   .modal h2 {
-    font-size: 1em; } }
+    font-size: 1.125em; }
+  .modal h3 {
+    font-size: 1em; }
+  .modal .copy {
+    margin: 0 80px; } }
 
 #masthead {
   position: fixed;
@@ -2390,6 +2422,35 @@ a {
     #section-team .section-header span {
       border-top: 5px dotted #DDDDDD;
       padding: 0 40px; }
+  #section-team .team-list .team-item {
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 20px; }
+    #section-team .team-list .team-item .pic {
+      width: 90%;
+      margin: 0 auto;
+      border-radius: 100%;
+      margin-bottom: 10px; }
+    #section-team .team-list .team-item h3, #section-team .team-list .team-item h4 {
+      margin: 0;
+      text-align: center;
+      color: #fff; }
+    #section-team .team-list .team-item .pic-hover {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0;
+      -webkit-transform: translateX(-100%);
+          -ms-transform: translateX(-100%);
+              transform: translateX(-100%); }
+    #section-team .team-list .team-item:hover .pic-hover {
+      -webkit-transform: translateX(-50%);
+          -ms-transform: translateX(-50%);
+              transform: translateX(-50%);
+      left: 50%;
+      width: 90%;
+      border-radius: 100%; }
   #section-team .team-carousel {
     width: 60%;
     margin-top: 80px; }
