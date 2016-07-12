@@ -1,7 +1,7 @@
 <?php 
 
 /*
-Template Name: artists template
+Template Name: team template
 */
 
 get_header(); ?>
@@ -19,7 +19,7 @@ get_header(); ?>
 
                     <?php
                         $args = array(
-                            'post_type' => 'artists',
+                            'post_type' => 'team',
                         );
                         $artists = new WP_Query( $args );
                         if( $artists->have_posts() ) {

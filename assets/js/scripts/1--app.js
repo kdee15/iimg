@@ -62,10 +62,11 @@ $('.showhide').click(function(e) {
 // A.2. END -----------------------------------------------------------------------------------------------------------
     
 var currentContent = '';	
-	$(".toggle-div").on('click', function(){
-		currentContent = $(this).attr('name');
-		if($('#'+currentContent).hasClass('on')){
-			$('#'+currentContent).removeClass('on');
+	jQuery('.toggle-div').on('click', function(){
+		currentContent = jQuery(this).attr('name');
+		if(jQuery('#'+currentContent).hasClass('on')){
+			jQuery('#'+currentContent).removeClass('on');
+            jQuery('body').removeClass('modal-open');
 		}else{
 			hideAllContent();
 			showCurrentContent(currentContent);
@@ -73,13 +74,15 @@ var currentContent = '';
 	});
 
 	function hideAllContent(){
-		$('.toggle-content').removeClass('on');
+		jQuery('.toggle-content').removeClass('on');
+        jQuery('body').removeClass('modal-open');
 	};
 	
 	function showCurrentContent(currentContentDiv){
-		$('#'+currentContentDiv).addClass('on');
+		jQuery('#'+currentContentDiv).addClass('on');
+        jQuery('body').addClass('modal-open');
 	};	
-			 
+    
 // A.2. END -----------------------------------------------------------------------------------------------------------
     
 // A.3. SCROLL TO LINK ------------------------------------------------------------------------------------------------

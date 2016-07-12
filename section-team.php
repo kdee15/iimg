@@ -28,14 +28,22 @@
                 $team->the_post();
                 ?>
             
-                <li class="team card one-quarter">
+                <li class="grid-item casestudies-item view view-tenth">
                     
-                    <img src="<?php the_field('photo') ?>" alt="client logo" class="toggle-div" name="<?php the_id() ?>" />
-                    <h3 class="card-title"><?php the_title(); ?></h3>
-                    <p class="card-title"><?php the_field('title') ?></p>
+                    <img src="<?php the_field('photo') ?>" alt="client logo" class="toggle-div" name="team<?php the_id() ?>" />
+                    <h3 class="card-title"><?php the_title() ?></h3>
+                    
+                    <div class="mask">
+                        <div class="foil">
+                            <div class="toggle-div button" name="team<?php the_title(); ?>">
+                                <span>SEE MORE</span> 
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <?php get_template_part( 'modal-team' ); ?>
                     
                 </li>
-       
             
                 <?php
               }
@@ -43,15 +51,10 @@
         ?>
 
         </ul>
-             
-                <section class="toggle-content" id="<?php the_id() ?>">
-                    <?php the_content(); ?>
-                </section>
         
         <!-- C.2.6.2. Teram Carousel List -->
         
-        
-        <div class="jcarousel-wrapper">
+        <div class="jcarousel-wrapper team-carousel">
             <div class="jcarousel">
 
                 <!-- C.2.6.2. CAROUSEL LIST -->
@@ -82,8 +85,6 @@
             <p class="jcarousel-pagination"></p>
 
         </div>
-        
-        
 
     </div>                 
 

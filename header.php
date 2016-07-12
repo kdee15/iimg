@@ -29,9 +29,6 @@
 
     <!-- B. HEAD JS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
 
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery/jquery-1.9.1.min.js"></script>
-    <script src="<?php echo get_template_directory_uri(); ?>/assets/js/components/jquery.jcarousel.min.js"></script>
-    <script src="<?php bloginfo('template_url'); ?>/assets/js/app.js"></script>
 
     <!-- B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
