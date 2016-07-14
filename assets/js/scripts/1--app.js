@@ -17,15 +17,15 @@ $('.reveal').click(function(e) {
     
     var target = $(this).attr('href');
     
-    if ($(target).hasClass('hidden') ) {
+    if ($(target).hasClass('hide-nav') ) {
         
-        $(target).removeClass('hidden');
-        $('.reveal').addClass('close');
+        $(target).removeClass('hide-nav');
+        $('.reveal').addClass('is-active');
         
     } else {
         
-        $(target).addClass('hidden');
-        $('.reveal').removeClass('close');
+        $(target).addClass('hide-nav');
+        $('.reveal').removeClass('is-active');
         
     }
     
@@ -33,8 +33,16 @@ $('.reveal').click(function(e) {
     
   });
     
-// A.1. END -----------------------------------------------------------------------------------------------------------
+$('.textLink').click(function(e) {
     
+    $('#mobi-nav').addClass('hide-nav');
+    
+    e.preventDefault();
+    
+  });
+    
+// A.1. END -----------------------------------------------------------------------------------------------------------
+  
 // A.2. GENERAL SHOW --------------------------------------------------------------------------------------------------
     
 $('.showhide').click(function(e) {
@@ -194,6 +202,22 @@ var currentContent = '';
     })(jQuery);
     
 // A.7. END -----------------------------------------------------------------------------------------------------------
+    
+    
+// A.8. RANDOM IMAGE SELECTOR -----------------------------------------------------------------------------------------
+	
+    var totalImages = 4;
+
+    var RandomNum = Math.floor( Math.random() * totalImages);
+
+    $(document).ready(function(){
+
+        $('.section-home').attr("style","background-image:url('wp-content/themes/iimg/assets/images/background/iimg"+RandomNum+".jpg')");
+
+    }); 
+    
+// A.8. END -----------------------------------------------------------------------------------------------------------
+
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 	

@@ -96,6 +96,7 @@
 
     // A.1.5. HIDE ON PHONES
 
+    .jcarousel-wrapper { &.home-carousel { display: none; }}
 
     // A.1.5. END
     
@@ -106,16 +107,10 @@
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(mobile) {
-
-    .container {
-        
-        padding: 0;
-        
-    }
     
-
     // A.1.5. HIDE ON PHONES
 
+    .jcarousel-wrapper { &.home-carousel { display: none; }}
 
     // A.1.5. END
     
@@ -129,6 +124,8 @@
 @include media-query(tablet) {
 
     // A.1.5. HIDE ON PHONES
+    
+    .jcarousel-wrapper { &.home-carousel { display: none; }}
 
     // A.1.5. END
     

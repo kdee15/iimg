@@ -3,7 +3,7 @@
 
 <section class="section-home">
         
-    <div class="jcarousel-wrapper">
+    <div class="jcarousel-wrapper home-carousel">
         <div class="jcarousel">
 
             <!-- C.2.6.2. CAROUSEL LIST -->

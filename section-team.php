@@ -3,15 +3,12 @@
 
 <section class="section" id="section-team">
     
-    <div class="figure-teamTop"><span></span></div>
-
     <div class="container">
 
         <!-- C.2.6.1. Page Title -->
 
         <section class="section-header">
             <h2>meet the team</h2>
-            <span></span>
         </section>
 
         <!-- C.2.6.2. Team List -->

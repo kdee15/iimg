@@ -1445,6 +1445,338 @@ a {
   h1, h2 {
     font-size: 45px; } }
 
+/**
+ * Toggle Switch Globals
+ *
+ * All switches should take on the class `c-hamburger` as well as their
+ * variant that will give them unique properties. This class is an overview
+ * class that acts as a reset for all versions of the icon.
+ */
+.burger {
+  top: 0;
+  right: 0; }
+
+.c-hamburger {
+  display: block;
+  position: relative;
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  font-size: 0;
+  text-indent: -9999px;
+  appearance: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  border-radius: none;
+  border: none;
+  cursor: pointer;
+  -webkit-transition: background 0.3s;
+          transition: background 0.3s;
+  float: right; }
+
+.c-hamburger:focus {
+  outline: none; }
+
+.c-hamburger span {
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 10px;
+  right: 10px;
+  height: 4px;
+  background: white; }
+
+.c-hamburger span::before,
+.c-hamburger span::after {
+  position: absolute;
+  display: block;
+  left: 0;
+  width: 100%;
+  height: 4px;
+  background-color: #fff;
+  content: ""; }
+
+.c-hamburger span::before {
+  top: -10px; }
+
+.c-hamburger span::after {
+  bottom: -10px; }
+
+/**
+ * Style 1
+ *
+ * Rotating hamburger icon (rot), that simply rotates 90 degrees when activated.
+ * Nothing too fancy, simple transition.
+ */
+.c-hamburger--rot span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--rot.is-active span {
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg); }
+
+/**
+ * Style 2
+ * 
+ * Hamburger to "x" (htx). Takes on a hamburger shape, bars slide
+ * down to center and transform into an "x".
+ */
+.c-hamburger--htx span::before,
+.c-hamburger--htx span::after {
+  -webkit-transition-duration: 0.3s, 0.3s;
+          transition-duration: 0.3s, 0.3s;
+  -webkit-transition-delay: 0.3s, 0s;
+          transition-delay: 0.3s, 0s; }
+
+.c-hamburger--htx span::before {
+  -webkit-transition-property: top, -webkit-transform;
+          transition-property: top, transform; }
+
+.c-hamburger--htx span::after {
+  -webkit-transition-property: bottom, -webkit-transform;
+          transition-property: bottom, transform; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htx.is-active span {
+  background: none; }
+
+.c-hamburger--htx.is-active span::before {
+  top: 0;
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg); }
+
+.c-hamburger--htx.is-active span::after {
+  bottom: 0;
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg); }
+
+.c-hamburger--htx.is-active span::before,
+.c-hamburger--htx.is-active span::after {
+  -webkit-transition-delay: 0s, 0.3s;
+          transition-delay: 0s, 0.3s; }
+
+/**
+ * Style 3
+ *
+ * Hamburger to left-arrow (htla). Hamburger menu transforms to a left-pointing
+ * arrow. Usually indicates an off canvas menu sliding in from left that
+ * will be close on re-click of the icon.
+ */
+.c-hamburger--htla {
+  background-color: #32dc64; }
+
+.c-hamburger--htla span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+.c-hamburger--htla span::before {
+  -webkit-transform-origin: top right;
+      -ms-transform-origin: top right;
+          transform-origin: top right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
+          transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.c-hamburger--htla span::after {
+  -webkit-transform-origin: bottom right;
+      -ms-transform-origin: bottom right;
+          transform-origin: bottom right;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
+          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htla.is-active {
+  background-color: #19903c; }
+
+.c-hamburger--htla.is-active span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.c-hamburger--htla.is-active span::before,
+.c-hamburger--htla.is-active span::after {
+  width: 50%; }
+
+.c-hamburger--htla.is-active span::before {
+  top: 0;
+  -webkit-transform: translateX(19px) translateY(2px) rotate(45deg);
+      -ms-transform: translateX(19px) translateY(2px) rotate(45deg);
+          transform: translateX(19px) translateY(2px) rotate(45deg); }
+
+.c-hamburger--htla.is-active span::after {
+  bottom: 0;
+  -webkit-transform: translateX(19px) translateY(-2px) rotate(-45deg);
+      -ms-transform: translateX(19px) translateY(-2px) rotate(-45deg);
+          transform: translateX(19px) translateY(-2px) rotate(-45deg); }
+
+/**
+ * Style 4
+ *
+ * Hamburger to right-arrow (htra). Hamburger menu transforms to a
+ * right-pointing arrow. Usually indicates an off canvas menu sliding in from 
+ * right that will be close on re-click of the icon.
+ */
+.c-hamburger--htra {
+  background-color: #ff9650; }
+
+.c-hamburger--htra span {
+  -webkit-transition: -webkit-transform 0.3s;
+          transition: transform 0.3s; }
+
+.c-hamburger--htra span::before {
+  -webkit-transform-origin: top left;
+      -ms-transform-origin: top left;
+          transform-origin: top left;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, top 0.3s;
+          transition: transform 0.3s, width 0.3s, top 0.3s; }
+
+.c-hamburger--htra span::after {
+  -webkit-transform-origin: bottom left;
+      -ms-transform-origin: bottom left;
+          transform-origin: bottom left;
+  -webkit-transition: -webkit-transform 0.3s, width 0.3s, bottom 0.3s;
+          transition: transform 0.3s, width 0.3s, bottom 0.3s; }
+
+/* active state, i.e. menu open */
+.c-hamburger--htra.is-active {
+  background-color: #e95d00; }
+
+.c-hamburger--htra.is-active span {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg); }
+
+.c-hamburger--htra.is-active span::before,
+.c-hamburger--htra.is-active span::after {
+  width: 50%; }
+
+.c-hamburger--htra.is-active span::before {
+  top: 0;
+  -webkit-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+      -ms-transform: translateX(-4px) translateY(2px) rotate(-45deg);
+          transform: translateX(-4px) translateY(2px) rotate(-45deg); }
+
+.c-hamburger--htra.is-active span::after {
+  bottom: 0;
+  -webkit-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+      -ms-transform: translateX(-4px) translateY(-2px) rotate(45deg);
+          transform: translateX(-4px) translateY(-2px) rotate(45deg); }
+
+#mobi-nav {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  top: 50px;
+  -webkit-transform: translateY(0%);
+      -ms-transform: translateY(0%);
+          transform: translateY(0%);
+  -webkit-transition: 0.3s;
+          transition: 0.3s;
+  z-index: 10; }
+  #mobi-nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-top: 20px; }
+    #mobi-nav ul .textLink {
+      list-style-type: none;
+      padding: 0; }
+      #mobi-nav ul .textLink a {
+        display: block;
+        text-align: center;
+        padding: 10px 0;
+        font-size: 1.5em;
+        color: #fff;
+        font-family: 'gow', helvetica, 'arial black'; }
+        #mobi-nav ul .textLink a:hover {
+          background: #DDDDDD; }
+      #mobi-nav ul .textLink.current_page_item {
+        background: #DDDDDD; }
+
+.hide-nav {
+  -webkit-transform: translateY(-200%) !important;
+      -ms-transform: translateY(-200%) !important;
+          transform: translateY(-200%) !important;
+  -webkit-transition: 0.3s;
+          transition: 0.3s; }
+
+.main-nav {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
+  left: 0; }
+  .main-nav ul {
+    margin: 0;
+    padding: 0;
+    vertical-align: middle;
+    padding-left: 10px; }
+    .main-nav ul li {
+      text-transform: uppercase;
+      font-size: 1.125em;
+      list-style-type: none;
+      display: inline;
+      vertical-align: middle; }
+      .main-nav ul li a {
+        color: #fff;
+        outline: none;
+        display: inline-block;
+        vertical-align: middle;
+        margin-right: 10px;
+        font-family: 'gow', helvetica, 'arial black'; }
+        .main-nav ul li a:hover {
+          color: #AAAAAA;
+          text-decoration: none;
+          text-shadow: 0 1px 3px #000; }
+      .main-nav ul li a:link img {
+        vertical-align: middle;
+        width: 35px;
+        height: 35px;
+        border: 2px solid #DDDDDD;
+        border-radius: 100%; }
+      .main-nav ul li.current_page_item a {
+        color: #AAAAAA;
+        text-shadow: 0 1px 3px #000; }
+
+@media only screen and (max-width: 320px) {
+  #masthead .burger {
+    display: block; }
+  .main-nav {
+    display: none; } }
+
+@media only screen and (min-width: 321px) and (max-width: 480px) {
+  #masthead .burger {
+    display: block; }
+  .main-nav {
+    display: none; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  #masthead .burger {
+    display: none; }
+  .mobi-nav {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  #masthead .burger {
+    display: none; }
+  .mobi-nav {
+    display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  #masthead .burger {
+    display: none; }
+  .mobi-nav {
+    display: none; } }
+
 .card {
   position: relative;
   overflow: hidden; }
@@ -2051,9 +2383,17 @@ a {
   -webkit-box-shadow: 0 0 2px #F0EFE7;
           box-shadow: 0 0 2px #F0EFE7; }
 
+@media only screen and (max-width: 320px) {
+  .jcarousel-wrapper.home-carousel {
+    display: none; } }
+
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  .container {
-    padding: 0; } }
+  .jcarousel-wrapper.home-carousel {
+    display: none; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .jcarousel-wrapper.home-carousel {
+    display: none; } }
 
 .modal-open {
   overflow: hidden; }
@@ -2250,17 +2590,49 @@ a {
               transform: translateY(-50%);
       right: 10px; }
 
+.masthead-mobi {
+  position: fixed;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  bottom: auto;
+  background: #E6EBF1;
+  z-index: 10; }
+  .masthead-mobi .logo-mobi {
+    width: 120px;
+    height: auto;
+    margin-top: 10px;
+    margin-left: 10px;
+    display: inline-block; }
+
 @media only screen and (max-width: 320px) {
+  .masthead-mobi {
+    display: block; }
   #masthead {
     display: none; }
     #masthead nav {
       display: none; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
+  .masthead-mobi {
+    display: block; }
   #masthead {
     display: none; }
     #masthead nav {
       display: none; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .masthead-mobi {
+    display: none; } }
+
+@media only screen and (min-width: 1024px) {
+  .masthead-mobi {
+    display: none; } }
+
+@media only screen and (min-width: 1200px) {
+  .masthead-mobi {
+    display: none; } }
 
 #mast .wrapper {
   position: relative;
@@ -2648,38 +3020,52 @@ a {
       width: 100%; }
 
 @media only screen and (max-width: 320px) {
-  .section-home .wrap-content {
-    top: 40%; }
-  .section-home h1 {
-    line-height: normal; }
-  .section-home .section-header {
-    padding: 0 0 0px 0; }
-  .section-home .front-requestLink {
-    display: none; }
-  .section-home .figure-downArrow {
-    display: none; }
-  .section-home .figure-logo {
-    width: 150px;
-    margin: 0 auto; }
-    .section-home .figure-logo img {
-      width: 100%; } }
+  .section-home {
+    padding-top: 50px;
+    background-size: auto 100%;
+    background-position: center center; }
+    .section-home .wrap-content {
+      top: 40%; }
+    .section-home h1 {
+      line-height: normal; }
+    .section-home .section-header {
+      padding: 0 0 0px 0; }
+    .section-home .front-requestLink {
+      display: none; }
+    .section-home .figure-downArrow {
+      display: none; }
+    .section-home .figure-logo {
+      width: 150px;
+      margin: 0 auto; }
+      .section-home .figure-logo img {
+        width: 100%; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  .section-home .wrap-content {
-    top: 40%; }
-  .section-home h1 {
-    line-height: normal; }
-  .section-home .section-header {
-    padding: 0 0 0px 0; }
-  .section-home .front-requestLink {
-    display: none; }
-  .section-home .figure-downArrow {
-    display: none; }
-  .section-home .figure-logo {
-    width: 150px;
-    margin: 0 auto; }
-    .section-home .figure-logo img {
-      width: 100%; } }
+  .section-home {
+    padding-top: 50px;
+    background-size: auto 100%;
+    background-position: center center; }
+    .section-home .wrap-content {
+      top: 40%; }
+    .section-home h1 {
+      line-height: normal; }
+    .section-home .section-header {
+      padding: 0 0 0px 0; }
+    .section-home .front-requestLink {
+      display: none; }
+    .section-home .figure-downArrow {
+      display: none; }
+    .section-home .figure-logo {
+      width: 150px;
+      margin: 0 auto; }
+      .section-home .figure-logo img {
+        width: 100%; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .section-home {
+    padding-top: 50px;
+    background-size: auto 100%;
+    background-position: center center; } }
 
 .section-home {
   padding-top: 170px; }

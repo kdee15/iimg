@@ -41,16 +41,8 @@
               }
             }
         ?>
-        
-        
-        
-        
-        
-        
 
     </div>
-
-    <div class="figure-teamBottom"></div>
 
 </section>
 

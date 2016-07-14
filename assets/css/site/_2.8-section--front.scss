@@ -96,6 +96,10 @@
 
 
     	.section-home {
+            
+            padding-top: 50px;
+            background-size: auto 100%;
+            background-position: center center;
     	
     	    .wrap-content { 
     	    
@@ -154,6 +158,10 @@
 @include media-query(mobile) { 
 
     	.section-home {
+            
+            padding-top: 50px;
+            background-size: auto 100%;
+            background-position: center center;
     	
     	    .wrap-content { 
     	    
@@ -210,7 +218,17 @@
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) { }
+@include media-query(tablet) { 
+
+
+    .section-home {
+
+        padding-top: 50px;
+        background-size: auto 100%;
+        background-position: center center;
+    }
+
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
