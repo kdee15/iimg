@@ -29,6 +29,7 @@
 
     <!-- B. HEAD JS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ --> 
 
+    <script src="<?php bloginfo('template_url'); ?>/assets/js/jquery/jquery-1.9.1.min.js"></script>
 
     <!-- B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
@@ -60,9 +61,9 @@
                     <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                     <li><a class="textLink" href="#section-services">We Offer</a></li>
                     <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
-                    <li><a class="imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
-                    <li><a class="imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Facebook"></a></li>
-                    <li><a class="imgLink" href="http://www.facebook.com/bighousevoices" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Facebook"></a></li>
+                    <li><a class="imgLink" href="http://www.facebook.com/iimg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
+                    <li><a class="imgLink" href="http://www.facebook.com/iimg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Twitter"></a></li>
+                    <li><a class="imgLink" href="http://www.facebook.com/iimg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Linked In"></a></li>
                 </ul>
             </nav>
 
