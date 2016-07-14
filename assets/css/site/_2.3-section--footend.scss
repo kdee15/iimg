@@ -11,8 +11,9 @@
 
     h6 {
         text-align: center;
-        color: $white;
+        color: $kd-royal;
         margin: 0;
+        font-size: $small;
 
         a {
             color: $black;
@@ -28,6 +29,36 @@
 
         }
     }
+    
+    // A.1.1. CAPTAIN FORM
+    
+    .form {
+        
+        h3 { font-size: $large; padding: 0 $baseline; color: $kd-royal; }
+        
+    }
+
+    .wpcf7-form {
+        
+        padding: $baseline;
+        
+        p { width: 100%; @extend .grid; }
+        
+        .wpcf7-form-control-wrap {
+            
+            @extend .grid__item;
+            @extend .one-whole;
+            @extend .desk--one-third;
+            @extend .desk-wide--one-third;
+            
+        }
+        
+        .wpcf7-submit { text-align: right; }
+        
+    }
+    
+    .wpcf7-response-output { margin: 0; padding: $baseline-small; color: $kd-royal; }
+    
 }
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
@@ -40,6 +71,20 @@
 
     #footend {
         padding: 60px 0;
+        
+        // A.1.1. CAPTAIN FORM
+
+        .wpcf7-form {
+
+            .wpcf7-form-control-wrap {
+
+                input { 
+                    width: 100%; 
+                    margin-bottom: $baseline-smaller; 
+                    box-sizing: border-box;
+                }
+            }
+        }
     }
 }
 
@@ -51,6 +96,20 @@
 
     #footend {
         padding: 60px 0;
+        
+        // A.1.1. CAPTAIN FORM
+
+        .wpcf7-form {
+
+            .wpcf7-form-control-wrap {
+
+                input { 
+                    width: 100%; 
+                    margin-bottom: $baseline-smaller; 
+                    box-sizing: border-box;
+                }
+            }
+        }
     }
 }
 
@@ -58,7 +117,26 @@
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) { }
+@include media-query(tablet) {
+
+    #footend {
+        padding: 60px 0;
+        
+        // A.1.1. CAPTAIN FORM
+
+        .wpcf7-form {
+
+            .wpcf7-form-control-wrap {
+
+                input { 
+                    width: 100%; 
+                    margin-bottom: $baseline-smaller; 
+                    box-sizing: border-box;
+                }
+            }
+        }
+    }
+}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 

@@ -88,7 +88,6 @@
         <!-- C.2.6.2. Team List -->
         
         <ul class="grid">
-            
 
         <?php
             $args = array(
