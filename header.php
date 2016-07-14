@@ -61,9 +61,23 @@
                     <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                     <li><a class="textLink" href="#section-services">We Offer</a></li>
                     <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
-                    <li><a class="imgLink" href="http://www.facebook.com/iimg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook"></a></li>
-                    <li><a class="imgLink" href="http://www.facebook.com/iimg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Twitter"></a></li>
-                    <li><a class="imgLink" href="http://www.facebook.com/iimg" target="_blank"><img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Linked In"></a></li>
+
+                    <li>
+                        <a class="imgLink" href="https://www.facebook.com/IIMG-Africa-578378702342326/" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="imgLink" href="https://twitter.com/iimgafrica" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Twitter">
+                        </a>
+                    </li>
+                    <li>
+                        <a class="imgLink" href="https://www.linkedin.com/company/iimg-africa-pty-ltd" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Linked In">
+                        </a>
+                    </li>
+
                 </ul>
             </nav>
 

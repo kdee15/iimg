@@ -13,7 +13,9 @@
             <!-- C.3.1. The Content ------------------------ -->
             
             <img src="<?php the_field('photo') ?>" alt="<?php the_title(); ?>" class="modal_img" />
-            <h2><?php the_field('name') ?></h2>
+            <h2><?php the_title() ?></h2>
+            <h3><?php the_field('title') ?></h3>
+            <div class="copy"><?php the_content() ?></div>
 
             <!-- C.3.1. END -------------------------------- --> 
             

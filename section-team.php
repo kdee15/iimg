@@ -28,18 +28,12 @@
                 $team->the_post();
                 ?>
             
-                <li class="grid-item casestudies-item view view-tenth">
+                <li class="one-fifth team-item">
                     
-                    <img src="<?php the_field('photo') ?>" alt="client logo" class="toggle-div" name="team<?php the_id() ?>" />
-                    <h3 class="card-title"><?php the_title() ?></h3>
-                    
-                    <div class="mask">
-                        <div class="foil">
-                            <div class="toggle-div button" name="team<?php the_title(); ?>">
-                                <span>SEE MORE</span> 
-                            </div>
-                        </div>
-                    </div>
+                    <img src="<?php the_field('photo') ?>" alt="pic" class="toggle-div pic" name="team<?php the_id() ?>" />
+                    <img src="<?php the_field('photo_highlight') ?>" alt="pic" class="toggle-div pic-hover" name="team<?php the_id() ?>" />
+                    <h3><?php the_title() ?></h3>
+                    <h4><?php the_field('title') ?></h4>
                     
                     <?php get_template_part( 'modal-team' ); ?>
                     

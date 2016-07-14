@@ -59,14 +59,14 @@ $('.showhide').click(function(e) {
     
 // A.2. END -----------------------------------------------------------------------------------------------------------
     
-// A.2. END -----------------------------------------------------------------------------------------------------------
+// A.3. SHOW/HIDE -----------------------------------------------------------------------------------------------------------
     
 var currentContent = '';	
-	jQuery('.toggle-div').on('click', function(){
-		currentContent = jQuery(this).attr('name');
-		if(jQuery('#'+currentContent).hasClass('on')){
-			jQuery('#'+currentContent).removeClass('on');
-            jQuery('body').removeClass('modal-open');
+	$(".toggle-div").on('click', function(){
+		currentContent = $(this).attr('name');
+		if($('#'+currentContent).hasClass('on')){
+			$('#'+currentContent).removeClass('on');
+            $("body").removeClass("modal-open");
 		}else{
 			hideAllContent();
 			showCurrentContent(currentContent);
@@ -74,13 +74,13 @@ var currentContent = '';
 	});
 
 	function hideAllContent(){
-		jQuery('.toggle-content').removeClass('on');
-        jQuery('body').removeClass('modal-open');
+		$('.toggle-content').removeClass('on');
+        $("body").removeClass("modal-open");
 	};
 	
 	function showCurrentContent(currentContentDiv){
-		jQuery('#'+currentContentDiv).addClass('on');
-        jQuery('body').addClass('modal-open');
+		$('#'+currentContentDiv).addClass('on');
+        $("body").addClass("modal-open");
 	};	
     
 // A.2. END -----------------------------------------------------------------------------------------------------------
