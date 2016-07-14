@@ -1,0 +1,39 @@
+// 1. CONFIG [ 0.2. FONTS ]  ##########################################################################################
+
+// A. FONTS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// A.1. INSTALLED FONTS -----------------------------------------------------------------------------------------------
+
+@font-face {
+    font-family: 'quattrocento';
+    src: url('../fonts/quattrocento/-QuattrocentoSans-Regular.ttf');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'quattrocento-bold-italic';
+    src: url('../fonts/quattrocento/-QuattrocentoSans-BoldItalic.ttf');
+    font-weight: bold;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'quattrocento-italic';
+    src: url('../fonts/quattrocento/-QuattrocentoSans-Italic.ttf');
+    font-weight: normal;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: 'quattrocento-bold';
+    src: url('../fonts/quattrocento/-QuattrocentoSans-Bold.ttf');
+    font-weight: bold;
+    font-style: bold;
+}
+
+// A.1. END -----------------------------------------------------------------------------------------------------------
+
+// A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// END OF FILE ########################################################################################################

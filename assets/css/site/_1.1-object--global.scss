@@ -10,17 +10,16 @@ html { font-weight: 300; }
 
 html, body, #mast, .section-home, .container { height: 100%; }
 
-body {
-}
+body { font-family: 'quattrocento', arial, helvetica; }
 
 // A.1. END
 
 // A.2. TYPOGRAPHY SETUP
 
-h4, h6, ul, li, p { @include source-light(); }
-h1, h2 { @include libre-header(); }
+h1,h2,h3,h4,h5,h6 { @include bold-font(); font-weight: bold; }
+
 h3.big-title { text-transform: uppercase; }
-p { font-size: $medium; }
+p { @include default-font(); font-size: $normal; }
 
 // A.2. END
 

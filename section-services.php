@@ -31,6 +31,11 @@
                         <figure class="figure__image">
                             <img src="<?php the_field('image_1') ?>" alt="service image" class="service-imgae" />
                         </figure>
+                        <section class="service-info">
+                            <div class="wrapper">
+                                <?php the_field('detail_1') ?>
+                            </div>
+                        </section>
                     </aside>
 
                     <aside class="service one-half">
@@ -38,6 +43,11 @@
                         <figure class="figure__image">
                             <img src="<?php the_field('image_2') ?>" alt="service image" class="service-imgae" />
                         </figure>
+                        <section class="service-info">
+                            <div class="wrapper">
+                                <?php the_field('detail_2') ?>
+                            </div>
+                        </section>
                     </aside>
 
                     <aside class="service one-half">
@@ -45,6 +55,11 @@
                         <figure class="figure__image">
                             <img src="<?php the_field('image_3') ?>" alt="service image" class="service-imgae" />
                         </figure>
+                        <section class="service-info">
+                            <div class="wrapper">
+                                <?php the_field('detail_3') ?>
+                            </div>
+                        </section>
                     </aside>
 
                     <aside class="service one-half">
@@ -52,6 +67,11 @@
                         <figure class="figure__image">
                             <img src="<?php the_field('image_4') ?>" alt="service image" class="service-imgae" />
                         </figure>
+                        <section class="service-info">
+                            <div class="wrapper">
+                                <?php the_field('detail_4') ?>
+                            </div>
+                        </section>
                     </aside>
 
                 </section>

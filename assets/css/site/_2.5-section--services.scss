@@ -37,7 +37,9 @@
         .one-half {
 
             position: relative;
+            overflow: hidden;
             
+            @extend .tablet--one-whole;
             @extend .mobile--one-whole;
             @extend .feature--one-whole;
             
@@ -51,6 +53,36 @@
             }
             
             .figure__image { margin: 0; img { width: 100%; height: auto; }}
+            
+            .service-info {
+                
+                @include position (absolute, 0);
+                background: rgba($black,0.5);
+                transform: translateY(200%); 
+                transition: 0.3s;
+                
+                .wrapper {
+                    
+                    @include position (absolute, $baseline); top: auto;
+                
+                    p { 
+                        color: $white; 
+                        font-size: $small; 
+                        line-height: normal; 
+                        margin: 0; 
+                    }
+                }
+            }
+            
+            &:hover {
+                
+                transition: 0.3s;
+                
+                h1 { z-index: 20; top: 20%; font-size: $large; }
+                
+                .service-info { transform: translateY(0%); }
+                
+            }
         }
     }
     
@@ -62,17 +94,17 @@
         
         ul {
             
-            @extend .grid;
+            list-style-type: none;
+            text-align: center;
             
             li {
                 
-                @extend .grid__item;
-                @extend .one-tenth;
-                
+                display: inline-block;
                 background: $kd-royal;
                 padding: $baseline-small;
                 color: $white;
                 text-align: center;
+                margin: 2px 0;
                 
             }
         }

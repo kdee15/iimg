@@ -72,7 +72,7 @@
                     </li>
                     <li>
                         <a class="imgLink" href="https://www.linkedin.com/company/iimg-africa-pty-ltd" target="_blank">
-                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Linked In">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedIn.svg" alt="Linked In">
                         </a>
                     </li>
                 </ul>

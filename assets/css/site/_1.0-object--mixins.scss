@@ -23,16 +23,12 @@
 
 }
 
-@mixin source-light () {
-    
-    font-family: source-serif-pro, arial, sans-serif;   
-    
-}
+@mixin default-font  () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
+@mixin source-light  () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
+@mixin libre-header  () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
 
-@mixin libre-header () {
-    
-    font-family: averia-libre, arial, sans-serif;   
-    
+@mixin bold-font  () { 
+    font-family: 'quattrocento-bold', 'arial black', helvetica, sans-serif; 
 }
 
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
