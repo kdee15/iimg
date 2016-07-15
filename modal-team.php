@@ -20,7 +20,7 @@
             <ul class="social-media">
                 <li class="soc-med">
                     <a class="imgLink" href="mailto:<?php the_field('email') ?>" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Twitter" class="icon tw">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-email.svg" alt="Twitter" class="icon tw">
                     </a>
                 </li>
                 <li class="soc-med">
