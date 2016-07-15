@@ -2422,7 +2422,6 @@ a {
     margin-bottom: 20px; }
   .modal .copy p {
     color: #fff;
-    font-size: 0.75em;
     line-height: normal; }
 
 .modal__grid {
@@ -2461,39 +2460,31 @@ a {
   .modal .modal__grid .grid-item .inner {
     padding: 5px; }
   .modal .modal_img {
-    width: 30%; }
+    width: 25%; }
   .modal h2 {
     font-size: 1em; }
   .modal h3 {
     font-size: 1em; }
   .modal .copy {
-    margin: 0 20px; } }
+    margin: 0 20px; }
+    .modal .copy p {
+      font-size: 1.6vh; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .modal .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal .modal_img {
-    width: 50%; }
-  .modal h2 {
-    font-size: 1em; }
-  .modal h3 {
-    font-size: 1em; }
-  .modal .copy {
-    margin: 0 20px; } }
-
-@media only screen and (min-width: 481px) and (max-width: 1023px) {
-  .modal .modal__grid .grid-item .inner {
-    padding: 10px; }
-  .modal .modal_img {
     width: 30%; }
   .modal h2 {
-    font-size: 1.125em; }
+    font-size: 1em; }
   .modal h3 {
     font-size: 1em; }
   .modal .copy {
-    margin: 0 80px; } }
+    margin: 0 20px; }
+    .modal .copy p {
+      font-size: 1.6vh; } }
 
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
   .modal .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal .modal_img {
@@ -2503,9 +2494,11 @@ a {
   .modal h3 {
     font-size: 1em; }
   .modal .copy {
-    margin: 0 80px; } }
+    margin: 0 80px; }
+    .modal .copy p {
+      font-size: 1.4vh; } }
 
-@media only screen and (min-width: 1200px) {
+@media only screen and (min-width: 1024px) {
   .modal .modal__grid .grid-item .inner {
     padding: 10px; }
   .modal .modal_img {
@@ -2515,7 +2508,25 @@ a {
   .modal h3 {
     font-size: 1em; }
   .modal .copy {
-    margin: 0 80px; } }
+    width: 40%;
+    margin: 10px auto; }
+    .modal .copy p {
+      font-size: 1.4vh; } }
+
+@media only screen and (min-width: 1200px) {
+  .modal .modal__grid .grid-item .inner {
+    padding: 10px; }
+  .modal .modal_img {
+    width: 10%; }
+  .modal h2 {
+    font-size: 1.125em; }
+  .modal h3 {
+    font-size: 1em; }
+  .modal .copy {
+    width: 40%;
+    margin: 10px auto; }
+    .modal .copy p {
+      font-size: 1.4vh; } }
 
 #masthead {
   position: fixed;
@@ -2783,16 +2794,16 @@ a {
       text-shadow: 0 0 10px #555555;
       line-height: normal; }
     #section-services .services .one-half .figure__image, #section-services .services .two-quarters .figure__image, #section-services .services .three-sixths .figure__image, #section-services .services .four-eighths .figure__image, #section-services .services .five-tenths .figure__image, #section-services .services .six-twelfths .figure__image, #section-services .services .tabs .tabs__header li .figure__image, .tabs .tabs__header #section-services .services li .figure__image {
-      margin: 0; }
+      margin: 10px; }
       #section-services .services .one-half .figure__image img, #section-services .services .two-quarters .figure__image img, #section-services .services .three-sixths .figure__image img, #section-services .services .four-eighths .figure__image img, #section-services .services .five-tenths .figure__image img, #section-services .services .six-twelfths .figure__image img, #section-services .services .tabs .tabs__header li .figure__image img, .tabs .tabs__header #section-services .services li .figure__image img {
         width: 100%;
         height: auto; }
     #section-services .services .one-half .service-info, #section-services .services .two-quarters .service-info, #section-services .services .three-sixths .service-info, #section-services .services .four-eighths .service-info, #section-services .services .five-tenths .service-info, #section-services .services .six-twelfths .service-info, #section-services .services .tabs .tabs__header li .service-info, .tabs .tabs__header #section-services .services li .service-info {
       position: absolute;
-      top: 0;
-      right: 0;
-      bottom: 0;
-      left: 0;
+      top: 10px;
+      right: 10px;
+      bottom: 10px;
+      left: 10px;
       background: rgba(0, 0, 0, 0.5);
       -webkit-transform: translateY(200%);
           -ms-transform: translateY(200%);
@@ -2808,7 +2819,6 @@ a {
         top: auto; }
         #section-services .services .one-half .service-info .wrapper p, #section-services .services .two-quarters .service-info .wrapper p, #section-services .services .three-sixths .service-info .wrapper p, #section-services .services .four-eighths .service-info .wrapper p, #section-services .services .five-tenths .service-info .wrapper p, #section-services .services .six-twelfths .service-info .wrapper p, #section-services .services .tabs .tabs__header li .service-info .wrapper p, .tabs .tabs__header #section-services .services li .service-info .wrapper p {
           color: #fff;
-          font-size: 0.75em;
           line-height: normal;
           margin: 0; }
     #section-services .services .one-half:hover, #section-services .services .two-quarters:hover, #section-services .services .three-sixths:hover, #section-services .services .four-eighths:hover, #section-services .services .five-tenths:hover, #section-services .services .six-twelfths:hover, #section-services .services .tabs .tabs__header li:hover, .tabs .tabs__header #section-services .services li:hover {
@@ -2846,6 +2856,8 @@ a {
     padding: 55px 0; }
   #section-services {
     padding: 0 0 40px; }
+    #section-services .container {
+      margin: 0 5px; }
     #section-services .section-header h2 {
       margin-bottom: 35px; }
     #section-services .section-header p {
@@ -2854,22 +2866,33 @@ a {
       margin-top: -60px;
       padding: 90px 0; }
     #section-services .services-group .services-item {
-      margin: 20px 0 0 0; } }
+      margin: 20px 0 0 0; }
+  .services .one-half .service-info .wrapper p, .services .two-quarters .service-info .wrapper p, .services .three-sixths .service-info .wrapper p, .services .four-eighths .service-info .wrapper p, .services .five-tenths .service-info .wrapper p, .services .six-twelfths .service-info .wrapper p, .services #footend .wpcf7-form p .one-half .service-info .wrapper p, #footend .wpcf7-form p .services .one-half .service-info .wrapper p, .services .tabs .tabs__header li .service-info .wrapper p, .tabs .tabs__header .services li .service-info .wrapper p {
+    font-size: 1.8vh; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  #top-services {
-    padding: 55px 0; }
   #section-services {
     padding: 0 0 40px; }
+    #section-services .container {
+      margin: 0 5px; }
     #section-services .section-header h2 {
       margin-bottom: 35px; }
-    #section-services .section-header p {
-      margin-bottom: 65px; }
-    #section-services .figure-servicesTop {
-      margin-top: -60px;
-      padding: 90px 0; }
-    #section-services .services-group .services-item {
-      margin: 20px 0 0 0; } }
+  .services .one-half .service-info .wrapper p, .services .two-quarters .service-info .wrapper p, .services .three-sixths .service-info .wrapper p, .services .four-eighths .service-info .wrapper p, .services .five-tenths .service-info .wrapper p, .services .six-twelfths .service-info .wrapper p, .services #footend .wpcf7-form p .one-half .service-info .wrapper p, #footend .wpcf7-form p .services .one-half .service-info .wrapper p, .services .tabs .tabs__header li .service-info .wrapper p, .tabs .tabs__header .services li .service-info .wrapper p {
+    font-size: 1.8vh; } }
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .container {
+    margin: 0 5px; }
+  .services .one-half .service-info .wrapper p, .services .two-quarters .service-info .wrapper p, .services .three-sixths .service-info .wrapper p, .services .four-eighths .service-info .wrapper p, .services .five-tenths .service-info .wrapper p, .services .six-twelfths .service-info .wrapper p, .services #footend .wpcf7-form p .one-half .service-info .wrapper p, #footend .wpcf7-form p .services .one-half .service-info .wrapper p, .services .tabs .tabs__header li .service-info .wrapper p, .tabs .tabs__header .services li .service-info .wrapper p {
+    font-size: 1.6vh; } }
+
+@media only screen and (min-width: 1024px) {
+  .services .one-half .service-info .wrapper p, .services .two-quarters .service-info .wrapper p, .services .three-sixths .service-info .wrapper p, .services .four-eighths .service-info .wrapper p, .services .five-tenths .service-info .wrapper p, .services .six-twelfths .service-info .wrapper p, .services #footend .wpcf7-form p .one-half .service-info .wrapper p, #footend .wpcf7-form p .services .one-half .service-info .wrapper p, .services .tabs .tabs__header li .service-info .wrapper p, .tabs .tabs__header .services li .service-info .wrapper p {
+    font-size: 1.6vh; } }
+
+@media only screen and (min-width: 1200px) {
+  .services .one-half .service-info .wrapper p, .services .two-quarters .service-info .wrapper p, .services .three-sixths .service-info .wrapper p, .services .four-eighths .service-info .wrapper p, .services .five-tenths .service-info .wrapper p, .services .six-twelfths .service-info .wrapper p, .services #footend .wpcf7-form p .one-half .service-info .wrapper p, #footend .wpcf7-form p .services .one-half .service-info .wrapper p, .services .tabs .tabs__header li .service-info .wrapper p, .tabs .tabs__header .services li .service-info .wrapper p {
+    font-size: 1.6vh; } }
 
 #section-team {
   background: #000A3F; }

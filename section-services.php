@@ -7,7 +7,7 @@
         <!-- C.2.4.1. Page Title -->
 
         <section class="section-header">
-            <h2>We offer</h2>
+            <h2>What We Offer</h2>
         </section>
 
         <!-- C.2.6.2. SERVICES DATA -->

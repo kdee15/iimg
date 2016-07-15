@@ -8,7 +8,7 @@
         <!-- C.2.6.1. Page Title -->
 
         <section class="section-header">
-            <h2>meet the team</h2>
+            <h2>Meet The Team</h2>
         </section>
 
         <!-- C.2.6.2. Team List -->

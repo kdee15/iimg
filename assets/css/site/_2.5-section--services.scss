@@ -52,11 +52,11 @@
                 line-height: normal;
             }
             
-            .figure__image { margin: 0; img { width: 100%; height: auto; }}
+            .figure__image { margin: $baseline-small; img { width: 100%; height: auto; }}
             
             .service-info {
                 
-                @include position (absolute, 0);
+                @include position (absolute, $baseline-small);
                 background: rgba($black,0.5);
                 transform: translateY(200%); 
                 transition: 0.3s;
@@ -67,7 +67,6 @@
                 
                     p { 
                         color: $white; 
-                        font-size: $small; 
                         line-height: normal; 
                         margin: 0; 
                     }
@@ -131,67 +130,74 @@
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(feature) {
-	
-		// E.1. anchor padding to align screen top
-		
-		#top-services {
-			padding: 55px 0;	
-		}
-		
-		
-		// E.2. containing div elements
-		
-		#section-services {
-		
-		    .section-header {
-		    	
-		    	h2 {
-		    	    // RESPONSIVE
-		    	    margin-bottom: 35px;
-		    	    // RESPONSIVE
-		    	}
-		    	
-		    	p {
-		    	    // RESPONSIVE
-		    	    margin-bottom: 65px;
-		    	    // RESPONSIVE
-		    	}					
-		    }
-			
-			// RESPONSIVE
-			padding: 0 0 40px;
-			// RESPONSIVE
-			
-			// E.2.1. Components
-			
-			
-			//
-			
-			.figure-servicesTop {
-			
-				// RESPONSIVE
-				margin-top: -60px;
-    			padding: 90px 0;
-    			// RESPONSIVE
-			}			
-			
-			//
-			
-			.services-group	{
-				
-				.services-item	{
-					// RESPONSIVE
-					margin: 20px 0 0 0;
-					// RESPONSIVE
-					
-				}
-					
-			}
-			
-			
-    		// E.1. End			
-		}
-	
+
+    // E.1. anchor padding to align screen top
+
+    #top-services {
+        padding: 55px 0;	
+    }
+
+
+    // E.2. containing div elements
+
+    #section-services {
+        
+        .container { margin: 0 $baseline-smaller; }
+
+        .section-header {
+
+            h2 {
+                // RESPONSIVE
+                margin-bottom: 35px;
+                // RESPONSIVE
+            }
+
+            p {
+                // RESPONSIVE
+                margin-bottom: 65px;
+                // RESPONSIVE
+            }					
+        }
+
+        // RESPONSIVE
+        padding: 0 0 40px;
+        // RESPONSIVE
+
+        // E.2.1. Components
+
+
+        //
+
+        .figure-servicesTop {
+
+            // RESPONSIVE
+            margin-top: -60px;
+            padding: 90px 0;
+            // RESPONSIVE
+        }			
+
+        //
+
+        .services-group	{
+
+            .services-item	{
+                // RESPONSIVE
+                margin: 20px 0 0 0;
+                // RESPONSIVE
+
+            }
+
+        }
+
+
+        // E.1. End			
+    }
+
+    // E.1. Services Grid
+    
+    .services { .one-half { .service-info { .wrapper { p { font-size: 1.8vh; }}}}}
+
+    // E.1. END
     
 }
 
@@ -201,67 +207,33 @@
 
 @include media-query(mobile) {
 
-	
-		// E.1. anchor padding to align screen top
-		
-		#top-services {
-			padding: 55px 0;	
-		}
-		
-		
-		// E.2. containing div elements
-		
-		#section-services {
-		
-		    .section-header {
-		    	
-		    	h2 {
-		    	    // RESPONSIVE
-		    	    margin-bottom: 35px;
-		    	    // RESPONSIVE
-		    	}
-		    	
-		    	p {
-		    	    // RESPONSIVE
-		    	    margin-bottom: 65px;
-		    	    // RESPONSIVE
-		    	}					
-		    }
-			
-			// RESPONSIVE
-			padding: 0 0 40px;
-			// RESPONSIVE
-			
-			// E.2.1. Components
-			
-			
-			//
-			
-			.figure-servicesTop {
-			
-				// RESPONSIVE
-				margin-top: -60px;
-    			padding: 90px 0;
-    			// RESPONSIVE
-			}			
-			
-			//
-			
-			.services-group	{
-				
-				.services-item	{
-					// RESPONSIVE
-					margin: 20px 0 0 0;
-					// RESPONSIVE
-					
-				}
-					
-			}
-			
-			
-    		// E.1. End			
-		}
-	
+    #section-services {
+        
+        .container { margin: 0 $baseline-smaller; }
+        
+        .section-header {
+
+            h2 {
+                // RESPONSIVE
+                margin-bottom: 35px;
+                // RESPONSIVE
+            }				
+        }
+
+        // RESPONSIVE
+        padding: 0 0 40px;
+        // RESPONSIVE
+
+        // E.2.1. Components
+
+        // E.1. End			
+    }
+
+    // E.1. Services Grid
+    
+    .services { .one-half { .service-info { .wrapper { p { font-size: 1.8vh; }}}}}
+
+    // E.1. END
 
 }
 
@@ -271,11 +243,14 @@
 
 @include media-query(tablet) {
 
-    // A.1.1 ABOUT US
+            
+    .container { margin: 0 $baseline-smaller; }
+    
+    // E.1. Services Grid
+    
+    .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
 
-
-
-    // A.1.1. END
+    // E.1. END
     
 }
 
@@ -285,11 +260,11 @@
 
 @include media-query(desk) {
 
-    // A.1.1 ABOUT US
+    // E.1. Services Grid
+    
+    .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
 
-
-
-    // A.1.1. END
+    // E.1. END
     
 }
 
@@ -299,11 +274,11 @@
 
 @include media-query(desk-wide) {
 
-    // A.1.1 ABOUT US
+    // E.1. Services Grid
+    
+    .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
 
-
-
-    // A.1.1. END
+    // E.1. END
     
 }
 

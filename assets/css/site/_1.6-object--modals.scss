@@ -34,7 +34,7 @@
     h2 { color: $white; margin: 0; margin-top: $baseline-small; }
     h3 { color: $white; margin: 0; margin-bottom: $baseline; }
     
-    .copy { p { color: $white; font-size: $small; line-height: normal; }}
+    .copy { p { color: $white; line-height: normal; }}
 
 }
 
@@ -111,12 +111,12 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 30%; }
+    .modal_img { width: 25%; }
     
     h2 { font-size: $normal; }
     h3 { font-size: $normal; }
     
-    .copy { margin: 0 $baseline; }
+    .copy { margin: 0 $baseline; p { font-size: 1.6vh; }}
     
     // A.1.6. END
 }
@@ -142,12 +142,12 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 50%; }
+    .modal_img { width: 30%; }
     
     h2 { font-size: $normal; }
     h3 { font-size: $normal; }
     
-    .copy { margin: 0 $baseline; }
+    .copy { margin: 0 $baseline; p { font-size: 1.6vh; }}
     
     // A.1.6. END
 }
@@ -172,13 +172,13 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 30%; }
+    .modal_img { width: 20%; }
     
     
     h2 { font-size: $medium; }
     h3 { font-size: $normal; }
     
-    .copy { margin: 0 $baseline-large; }
+    .copy { margin: 0 $baseline-large; p { font-size: 1.4vh; }}
     
     // A.1.6. END
 }
@@ -203,13 +203,13 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 20%; }
+    .modal_img { width: 15%; }
     
     
     h2 { font-size: $medium; }
     h3 { font-size: $normal; }
     
-    .copy { margin: 0 $baseline-large; }
+    .copy { width: 40%; margin: $baseline-small auto; p { font-size: 1.4vh; }}
     
     // A.1.6. END
 }
@@ -234,12 +234,12 @@
     
     // A.1.6. ARTIST INFO
 
-    .modal_img { width: 15%; }
+    .modal_img { width: 10%; }
     
     h2 { font-size: $medium; }
     h3 { font-size: $normal; }
     
-    .copy { margin: 0 $baseline-large; }
+    .copy { width: 40%; margin: $baseline-small auto; p { font-size: 1.4vh; }}
     
     // A.1.6. END
 }
