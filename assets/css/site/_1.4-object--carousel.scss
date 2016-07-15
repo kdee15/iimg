@@ -96,7 +96,20 @@
 
     // A.1.5. HIDE ON PHONES
 
-    .jcarousel-wrapper { &.home-carousel { display: none; }}
+    //.jcarousel-wrapper { &.home-carousel { display: none; }}
+    .jcarousel-wrapper { &.home-carousel { 
+        
+            .jcarousel {
+                ul {
+                    li {
+                        
+                        img { width: auto; height: 100%; }
+
+                    }
+                }
+            }
+        }
+    }
 
     // A.1.5. END
     
@@ -110,11 +123,23 @@
     
     // A.1.5. HIDE ON PHONES
 
-    .jcarousel-wrapper { &.home-carousel { display: none; }}
+    //.jcarousel-wrapper { &.home-carousel { display: none; }}
+    .jcarousel-wrapper { &.home-carousel { 
+        
+            .jcarousel {
+                ul {
+                    li {
+                        
+                        img { width: auto; height: 100%; }
+
+                    }
+                }
+            }
+        }
+    }
 
     // A.1.5. END
     
-
 }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -125,7 +150,20 @@
 
     // A.1.5. HIDE ON PHONES
     
-    .jcarousel-wrapper { &.home-carousel { display: none; }}
+    //.jcarousel-wrapper { &.home-carousel { display: none; }}
+    .jcarousel-wrapper { &.home-carousel { 
+        
+            .jcarousel {
+                ul {
+                    li {
+                        
+                        img { width: auto; height: 100%; }
+
+                    }
+                }
+            }
+        }
+    }
 
     // A.1.5. END
     
