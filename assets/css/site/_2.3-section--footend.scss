@@ -61,6 +61,8 @@
     }
     
     .wpcf7-response-output { margin: 0; padding: $baseline-small; color: $kd-royal; }
+    
+    h6 { text-align: center; color: $kd-royal; a { color: $kd-mauve; }}
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -138,7 +140,11 @@
         
         .email-us { display: block; }
 
-        // A.1.2. CAPTAIN FORM
+        // A.1.2. CONTACT FORM
+
+        .form { .logo { .form-logo { width: 80%; margin: $baseline-medium auto;}}}
+        
+        // A.1.1. CAPTAIN FORM
 
         .wpcf7-form {
 
@@ -163,6 +169,10 @@
         
         .email-us { display: block; }
 
+        // A.1.2. CONTACT FORM
+
+        .form { .logo { .form-logo { width: 60%; margin: $baseline-medium auto;}}}
+        
     }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -175,6 +185,10 @@
         
         .email-us { display: block; }
 
+        // A.1.2. CONTACT FORM
+
+        .form { .logo { .form-logo { width: 60%; margin: $baseline-medium auto;}}}
+        
     }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

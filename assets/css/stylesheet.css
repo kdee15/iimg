@@ -2760,6 +2760,11 @@ a {
     margin: 0;
     padding: 10px;
     color: #000A3F; }
+  #footend h6 {
+    text-align: center;
+    color: #000A3F; }
+    #footend h6 a {
+      color: #BBC5CE; }
   @media only screen and (max-width: 320px) {
     #footend {
       padding: 60px 0; }
@@ -2791,6 +2796,9 @@ a {
       padding: 60px 0; }
       #footend .email-us {
         display: block; }
+      #footend .form .logo .form-logo {
+        width: 80%;
+        margin: 40px auto; }
       #footend .wpcf7-form .wpcf7-form-control-wrap input {
         width: 100%;
         margin-bottom: 5px;
@@ -2798,10 +2806,16 @@ a {
                 box-sizing: border-box; } }
   @media only screen and (min-width: 1024px) {
     #footend .email-us {
-      display: block; } }
+      display: block; }
+    #footend .form .logo .form-logo {
+      width: 60%;
+      margin: 40px auto; } }
   @media only screen and (min-width: 1200px) {
     #footend .email-us {
-      display: block; } }
+      display: block; }
+    #footend .form .logo .form-logo {
+      width: 60%;
+      margin: 40px auto; } }
 
 #section-our-vision {
   background: #000A3F;
