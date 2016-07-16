@@ -7,20 +7,15 @@
 #section-contact {
     
     background: $kd-royal;
-
-    // RESPONSIVE
-    padding: 0 0 40px;
-    // RESPONSIVE
-
     color: #818181;
 
     // H.1. Components
 
-    //
-
     .section-header {
         
-        margin-bottom: $baseline-large;
+        margin-bottom: $baseline;
+        
+        h2 { display: inline-block; color: $kd-lilac; }
     }
     
     // H.2. Brnaches Grid
@@ -50,16 +45,22 @@
                 
                 .wrapper { margin: 0 $baseline;
                     
-                    h3 { margin: 0; margin-bottom: $baseline-small; font-size: $large; color: $white; }
-                    h4 { margin: 0; margin-bottom: $baseline-small; font-size: $medium; color: $kd-mauve; }
-                    p { color: $white; font-size: $normal; margin-bottom: $baseline-small; }
-                
                     h3, p, div { color: $white; }
+                    
+                    h3 { margin: 0; margin-bottom: $baseline-small; font-size: $large; }
+                    h4 { margin: 0; margin-bottom: $baseline-small; font-size: $medium; color: $kd-mauve; }
+                    p { font-size: $normal; margin-bottom: $baseline-small;
+                    
+                        &.branch-item { padding-left: 30px; background-size: 20px 20px!important;
+                         
+                            &.tel { background: url('../images/icons/icon--phone.svg') no-repeat top left; }
+                            &.email { background: url('../images/icons/icon--email.svg') no-repeat top left; }
+                            &.address { background: url('../images/icons/icon--location.svg') no-repeat top left; }
+                        }  
+                    }
                 }
             }
-            
         }
-        
     }
 
     // H.1. End			

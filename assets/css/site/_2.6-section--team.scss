@@ -8,23 +8,11 @@
 
     background: $kd-royal;
 
-    // F.1. Components
-
-    .figure-teamTop {
-        
-        background: url(../images/services/services-top-icon.png) top center no-repeat;
-
-        // RESPONSIVE
-        margin-top: -60px;
-        padding: 90px 0;
-        // RESPONSIVE
-    }			
+    // F.1. Components		
 
     .section-header {
         
-        margin-bottom: $baseline-large;
-        
-        h2 { color: $ia-grey10; }
+        h2 { color: $kd-lilac; margin: 0; }
         
         .icon {
             
@@ -55,7 +43,9 @@
             margin-bottom: $baseline;
             
             .pic { width: 50%; margin: 0 auto; border-radius: 100%; margin-bottom: $baseline-small; }
-            h3, h4 { margin: 0; text-align: center; color: $white; }
+            .team-text { margin: 0; text-align: center; color: $white; }
+            h3 { font-size: $normal; }
+            h4 { font-size: $small; }
             
             .pic-hover { @include position(absolute, 0); transform: translateX(-100%); }
             
@@ -73,7 +63,6 @@
         margin-top: $baseline-large;
         
     }
-}
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
 
@@ -83,39 +72,7 @@
 
 @include media-query(feature) {
 
-    // A.1.1 CASE STUDIES
-
-    #section-casestudies {
-
-        // F.1. Components
-
-        //
-
-        .section-header {
-
-            span {
-                padding: 0 40px;
-            }
-        }
-
-        //
-
-        .casestudies-group	{
-
-            .casestudies-item	{
-
-                .bob-caseHover {
-                    padding: 20px 0 10px;
-                }
-
-            }
-
-        }
-
-    }
-    
-    // A.1.1. END
-    
+    .section-header { padding-top: $baseline-large; margin-bottom: $baseline-medium; }
 }
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -124,40 +81,7 @@
 
 @include media-query(mobile) {
 
-    // A.1.1 CASE STUDIES
-
-    #section-casestudies {
-
-        // F.1. Components
-
-        //
-
-        .section-header {
-
-            span {
-                padding: 0 40px;
-            }
-        }
-
-        //
-
-        .casestudies-group	{
-
-            .casestudies-item	{
-
-                .bob-caseHover {
-                    padding: 20px 0 10px;
-                }
-
-            }
-
-        }
-
-    }
-    
-    // A.1.1. END
-    
-
+    .section-header { padding-top: $baseline-medium; margin-bottom: $baseline-medium; }
 }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -166,39 +90,7 @@
 
 @include media-query(tablet) {
 
-    // A.1.1 CASE STUDIES
-
-    #section-casestudies {
-
-        // F.1. Components
-
-        //
-
-        .section-header {
-
-            span {
-                padding: 0 40px;
-            }
-        }
-
-        //
-
-        .casestudies-group	{
-
-            .casestudies-item	{
-
-                .bob-caseHover {
-                    padding: 20px 0 40px;
-                }
-
-            }
-
-        }
-
-    }
-    
-    // A.1.1. END
-    
+    .section-header { padding-top: $baseline-large; margin-bottom: $baseline-medium; }
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -207,39 +99,7 @@
 
 @include media-query(desk) {
 
-    // A.1.1 CASE STUDIES
-
-    #section-casestudies {
-
-        // F.1. Components
-
-        //
-
-        .section-header {
-
-            span {
-                padding: 0 40px;
-            }
-        }
-
-        //
-
-        .casestudies-group	{
-
-            .casestudies-item	{
-
-                .bob-caseHover {
-                    padding: 20px 0 40px;
-                }
-
-            }
-
-        }
-
-    }
-    
-    // A.1.1. END
-    
+    .section-header { padding-top: $baseline-large; margin-bottom: $baseline-medium; }
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -248,41 +108,11 @@
 
 @include media-query(desk-wide) {
 
-    // A.1.1 CASE STUDIES
-
-    #section-casestudies {
-
-        // F.1. Components
-
-        //
-
-        .section-header {
-
-            span {
-                padding: 0 40px;
-            }
-        }
-
-        //
-
-        .casestudies-group	{
-
-            .casestudies-item	{
-
-                .bob-caseHover {
-                    padding: 20px 0 40px;
-                }
-
-            }
-
-        }
-
-    }
-    
-    // A.1.1. END
-    
+    .section-header { padding-top: $baseline-large; margin-bottom: $baseline-medium; }
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+}    
+    
 // END OF FILE ########################################################################################################

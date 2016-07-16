@@ -4,39 +4,32 @@
 
 // A.1. FOOTEND -------------------------------------------------------------------------------------------------------
 
+// A.1.2. Scroll to top
+
+#wpfront-scroll-top-container { width: 65px; height: 65px;
+
+    img { width: 100%!important; height: 100%!important; }
+}
+
 #footend {
 
     background: $kd-lilac;
     padding: 60px 0;
-
-    h6 {
-        text-align: center;
-        color: $kd-royal;
-        margin: 0;
-        font-size: $small;
-
-        a {
-            color: $black;
-        }		       
-    }
-
-    figure {
-        text-align: center;
-
-        img {
-
-            display: inline-block;
-
-        }
-    }
     
-    // A.1.1. CAPTAIN FORM
+    // A.1.1. EMAIL US BUTTON
+    
+    .email-us { position: fixed; bottom: 20px; right: 85px;
+        .icon { width: 65px; height: 65px; }
+    }
+
+    // A.1.2. CONTACT FORM
     
     .form {
         
-        h3 { font-size: $large; padding: 0 $baseline; color: $kd-royal; }
+        .logo { width: 25%; .form-logo { width: 100%; height: auto; }}
+        .contact-form { width: 75%; }
         
-    }
+        h3 { font-size: $large; padding: 0 $baseline; color: $kd-royal; }}
 
     .wpcf7-form {
         
@@ -58,8 +51,6 @@
     }
     
     .wpcf7-response-output { margin: 0; padding: $baseline-small; color: $kd-royal; }
-    
-}
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -67,12 +58,15 @@
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(feature) {
+    @include media-query(feature) {
 
-    #footend {
         padding: 60px 0;
+
+        // A.1.1. Email Us
         
-        // A.1.1. CAPTAIN FORM
+        .email-us { display: none; }
+        
+        // A.1.3. CAPTAIN FORM
 
         .wpcf7-form {
 
@@ -86,16 +80,18 @@
             }
         }
     }
-}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(mobile) {
+    @include media-query(mobile) {
 
-    #footend {
         padding: 60px 0;
+
+        // A.1.1. Email Us
+        
+        .email-us { display: none; }
         
         // A.1.1. CAPTAIN FORM
 
@@ -111,18 +107,20 @@
             }
         }
     }
-}
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) {
+    @include media-query(tablet) {
 
-    #footend {
         padding: 60px 0;
+
+        // A.1.1. Email Us
         
-        // A.1.1. CAPTAIN FORM
+        .email-us { display: block; }
+
+        // A.1.2. CAPTAIN FORM
 
         .wpcf7-form {
 
@@ -136,20 +134,33 @@
             }
         }
     }
-}
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk) { }
+    @include media-query(desk) {
+
+        // A.1.1. Email Us
+        
+        .email-us { display: block; }
+
+    }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk-wide) { }
+    @include media-query(desk-wide) {
+
+        // A.1.1. Email Us
+        
+        .email-us { display: block; }
+
+    }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+}    
+    
 // END OF FILE ########################################################################################################

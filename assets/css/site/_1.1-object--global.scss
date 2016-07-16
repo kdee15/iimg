@@ -16,7 +16,7 @@ body { font-family: 'quattrocento', arial, helvetica; }
 
 // A.2. TYPOGRAPHY SETUP
 
-h1,h2,h3,h4,h5,h6 { @include bold-font(); font-weight: bold; }
+h1,h2,h3,h4,h5,h6 { @include bold-font(); font-weight: bold; display: block; line-height: normal; }
 
 h3.big-title { text-transform: uppercase; }
 p { @include default-font(); font-size: $normal; }

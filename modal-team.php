@@ -25,7 +25,7 @@
                 </li>
                 <li class="soc-med">
                     <a class="imgLink" href="<?php the_field('linkedin') ?>" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedIn.svg" alt="Linked In" class="icon li">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Linked In" class="icon li">
                     </a>
                 </li>
 

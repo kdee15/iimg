@@ -3,13 +3,6 @@
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. HOME -----------------------------------------------------------------------------------------------------
-	
-// E.1. anchor padding to align screen top
-
-#top-services {
-    padding: 55px 0;	
-}
-
 
 // E.2. containing div elements
 
@@ -18,15 +11,12 @@
     background: $kd-mauve;
 
     .section-header {
-
+        
         h2 {
             color: $ia-grey90;
-            // RESPONSIVE
-            margin-bottom: $baseline-large;
-            // RESPONSIVE
-            line-height: normal;
+            margin-bottom: $baseline;
+            display: inline-block;
         }
-					
     }
 
     // E.1. Intro text
@@ -95,6 +85,8 @@
             
             list-style-type: none;
             text-align: center;
+            margin: 0;
+            padding: 0;
             
             li {
                 
@@ -121,7 +113,6 @@
         img { width: 90%; height: auto; margin: $baseline auto; }
         
     }
-}
 
 // A.2. END -----------------------------------------------------------------------------------------------------------
 
@@ -129,159 +120,125 @@
 
 // B. MOBILE STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(feature) {
-
-    // E.1. anchor padding to align screen top
-
-    #top-services {
-        padding: 55px 0;	
-    }
-
+    @include media-query(feature) {
 
     // E.2. containing div elements
 
-    #section-services {
+        .container { margin: 0 $baseline; }
         
-        .container { margin: 0 $baseline-smaller; }
+        // E.1. Section Header
+        
+        .section-header { padding-top: $baseline-medium; h2 { margin-bottom: 0; }}
 
-        .section-header {
+        // E.1. Services Grid
 
-            h2 {
-                // RESPONSIVE
-                margin-bottom: 35px;
-                // RESPONSIVE
-            }
-
-            p {
-                // RESPONSIVE
-                margin-bottom: 65px;
-                // RESPONSIVE
-            }					
+        .services { .one-half { 
+            
+            .figure__image { margin: $baseline 0; }
+            .service-info { .wrapper { p { font-size: 1.8vh; }}}}
+            
         }
+    
+        // E.1. Keywords
 
-        // RESPONSIVE
-        padding: 0 0 40px;
-        // RESPONSIVE
+        .key-words { margin: $baseline-small 0; ul { li { display: block; }}}
 
-        // E.2.1. Components
-
-
-        //
-
-        .figure-servicesTop {
-
-            // RESPONSIVE
-            margin-top: -60px;
-            padding: 90px 0;
-            // RESPONSIVE
-        }			
-
-        //
-
-        .services-group	{
-
-            .services-item	{
-                // RESPONSIVE
-                margin: 20px 0 0 0;
-                // RESPONSIVE
-
-            }
-
-        }
-
-
-        // E.1. End			
     }
-
-    // E.1. Services Grid
-    
-    .services { .one-half { .service-info { .wrapper { p { font-size: 1.8vh; }}}}}
-
-    // E.1. END
-    
-}
 
 // B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C. TABLET STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(mobile) {
-
-    #section-services {
+    @include media-query(mobile) {
         
-        .container { margin: 0 $baseline-smaller; }
+        // E.1. Section Header
         
-        .section-header {
+        .section-header { padding-top: 0; }
 
-            h2 {
-                // RESPONSIVE
-                margin-bottom: 35px;
-                // RESPONSIVE
-            }				
-        }
-
+        // E.1. Services Grid
+        
+        .container { margin: 0 $baseline; }
+    
         // RESPONSIVE
         padding: 0 0 40px;
         // RESPONSIVE
 
-        // E.2.1. Components
+        // E.1. Services Grid
 
-        // E.1. End			
-    }
-
-    // E.1. Services Grid
+        .services { .one-half { 
+            
+            .figure__image { margin: $baseline 0; }
+            .service-info { .wrapper { p { font-size: 1.8vh; }}}}}
     
-    .services { .one-half { .service-info { .wrapper { p { font-size: 1.8vh; }}}}}
+        // E.1. Keywords
 
-    // E.1. END
-
-}
+        .key-words { margin: $baseline-small 0; ul { li { display: block; }}}
+    
+    }
 
 // C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) {
+    @include media-query(tablet) {
+        
+        // E.1. Section Header
+        
+        .section-header { padding-top: $baseline; }
 
+        // E.1. Services Grid
+        
+        .container { margin: 0 $baseline; }
+
+        // E.1. Services Grid
+
+        .services { .one-half { 
             
-    .container { margin: 0 $baseline-smaller; }
-    
-    // E.1. Services Grid
-    
-    .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
+            .figure__image { margin: $baseline 0; }
+            .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
 
-    // E.1. END
-    
-}
+        // E.1. END
+
+    }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk) {
+    @include media-query(desk) {
+        
+        // E.1. Section Header
+        
+        .section-header { padding-top: $baseline; }
 
-    // E.1. Services Grid
-    
-    .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
+        // E.1. Services Grid
 
-    // E.1. END
-    
-}
+        .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
+
+        // E.1. END
+
+    }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(desk-wide) {
+    @include media-query(desk-wide) {
+        
+        // E.1. Section Header
+        
+        .section-header { padding-top: $baseline; }
 
-    // E.1. Services Grid
-    
-    .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
+        // E.1. Services Grid
 
-    // E.1. END
-    
-}
+        .services { .one-half { .service-info { .wrapper { p { font-size: 1.6vh; }}}}}
+
+        // E.1. END
+
+    }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
+}    
+    
 // END OF FILE ########################################################################################################

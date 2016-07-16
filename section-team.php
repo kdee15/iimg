@@ -30,8 +30,8 @@
                     
                     <img src="<?php the_field('photo') ?>" alt="pic" class="toggle-div pic" name="team<?php the_id() ?>" />
                     <img src="<?php the_field('photo_highlight') ?>" alt="pic" class="toggle-div pic-hover" name="team<?php the_id() ?>" />
-                    <h3><?php the_title() ?></h3>
-                    <h4><?php the_field('title') ?></h4>
+                    <h3 class="team-text"><?php the_title() ?></h3>
+                    <h4 class="team-text"><?php the_field('title') ?></h4>
                     
                     <?php get_template_part( 'modal-team' ); ?>
                     

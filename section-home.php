@@ -1,4 +1,3 @@
-
 <!-- C.2.0. WE ARE DIFFERENT -->
 
 <section class="section-home">
@@ -43,4 +42,4 @@
 
 </section>
 
-<!-- C.2.0. END -->  
+<!-- C.2.0. END -->

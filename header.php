@@ -47,13 +47,16 @@
         <header id="masthead" class="masthead">
 
             <!-- C.1.1. Logo -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="" class="logo"/>
-
+            <a href="#page-home" class="home-link">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="" class="logo"/>
+            </a>    
             <!-- C.1.2. Navigation -->
             <nav class="nav-main">
 
                 <!-- C.1.1. Logo -->
-                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-small"/>
+                <a href="#page-home" class="home-link">
+                    <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-small"/>
+                </a>
 
                 <!-- C.1.2. NAV -->
                 <ul>
@@ -90,7 +93,9 @@
         <header class="masthead-mobi">
             
             <!-- C.1.1. Logo -->
-            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-mobi"/>
+            <a href="#page-home" class="home-link">
+                <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-mobi"/>
+            </a>
             
             <a class="c-hamburger c-hamburger--rot burger reveal" href="#mobi-nav">
                 <span>toggle menu</span>
@@ -103,28 +108,32 @@
 
             <!-- C.1.2. NAV -->
             <ul>
-                <li><a class="textLink reveal" href="#section-our-vision">Our Vision</a></li>
-                <li><a class="textLink reveal" href="#section-team">Meet the Team</a></li>
-                <li><a class="textLink reveal" href="#section-services">We Offer</a></li>
-                <li><a class="textLink reveal" href="#section-contact">Talk to Us</a></li>
+                <li><a class="textLink" href="#section-our-vision">Our Vision</a></li>
+                <li><a class="textLink" href="#section-team">Meet the Team</a></li>
+                <li><a class="textLink" href="#section-services">We Offer</a></li>
+                <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
 
-                <li>
+            </ul>
+            
+            <ul class="social-media">
+                <li class="soc-med">
                     <a class="imgLink" href="https://www.facebook.com/IIMG-Africa-578378702342326/" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-facebook.svg" alt="Facebook">
                     </a>
                 </li>
-                <li>
+                <li class="soc-med">
                     <a class="imgLink" href="https://twitter.com/iimgafrica" target="_blank">
                         <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-twitter.svg" alt="Twitter">
                     </a>
                 </li>
-                <li>
-                    <a class="imgLink" href="https://www.linkedin.com/company/iimg-africa-pty-ltd" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Linked In">
+                <li class="soc-med">
+                    <a class="imgLink" href="<?php the_field('linkedin') ?>" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedIn.svg" alt="Linked In" class="icon li">
                     </a>
                 </li>
 
             </ul>
+            
         </nav>
     
     
