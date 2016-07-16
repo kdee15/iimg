@@ -7,11 +7,11 @@
         <a href="#form" class="email-us">
             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--email.svg" alt="Let us contact you" class="icon">
         </a>
-        <section class="form" id="form">
-            <aside class="logo">
+        <section class="form grid" id="form">
+            <aside class="logo one-quarter">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/icons/icon--email.svg" alt="Let us contact you" class="form-logo">
             </aside>
-            <aside class="contact-form">
+            <aside class="contact-form three-quarters">
                 <h3>Let us contact you</h3>
                 <?php dynamic_sidebar( 'contact-widget' ); ?>
             </aside>

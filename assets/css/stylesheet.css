@@ -200,7 +200,7 @@ html, body {
           flex: 0 0 91.666%; }
 
 @media only screen and (max-width: 320px) {
-  .feature--one-whole, .modal__grid .grid-item, #section-our-vision .figure__our-vision, #section-our-vision .our-vision, #section-services .services .one-half, #section-services .services .two-quarters, #section-services .services .three-sixths, #section-services .services .four-eighths, #section-services .services .five-tenths, #section-services .services .six-twelfths, #section-services .services .tabs .tabs__header li, .tabs .tabs__header #section-services .services li, #section-contact .section__branches .branch .figure__image, #section-contact .section__branches .branch .branch-info {
+  .feature--one-whole, .modal__grid .grid-item, #footend .form .logo, #footend .form .contact-form, #section-our-vision .figure__our-vision, #section-our-vision .our-vision, #section-services .services .one-half, #section-services .services .two-quarters, #section-services .services .three-sixths, #section-services .services .four-eighths, #section-services .services .five-tenths, #section-services .services .six-twelfths, #section-services .services .tabs .tabs__header li, .tabs .tabs__header #section-services .services li, #section-contact .section__branches .branch .figure__image, #section-contact .section__branches .branch .branch-info {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
@@ -317,7 +317,7 @@ html, body {
             flex: 0 0 91.666%; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
-  .mobile--one-whole, .modal__grid .grid-item, #section-our-vision .figure__our-vision, #section-our-vision .our-vision, #section-services .services .one-half, #section-services .services .two-quarters, #section-services .services .three-sixths, #section-services .services .four-eighths, #section-services .services .five-tenths, #section-services .services .six-twelfths, #section-services .services .tabs .tabs__header li, .tabs .tabs__header #section-services .services li, #section-contact .section__branches .branch .figure__image, #section-contact .section__branches .branch .branch-info {
+  .mobile--one-whole, .modal__grid .grid-item, #footend .form .logo, #footend .form .contact-form, #section-our-vision .figure__our-vision, #section-our-vision .our-vision, #section-services .services .one-half, #section-services .services .two-quarters, #section-services .services .three-sixths, #section-services .services .four-eighths, #section-services .services .five-tenths, #section-services .services .six-twelfths, #section-services .services .tabs .tabs__header li, .tabs .tabs__header #section-services .services li, #section-contact .section__branches .branch .figure__image, #section-contact .section__branches .branch .branch-info {
     -webkit-box-flex: 0;
     -webkit-flex: 0 0 100%;
         -ms-flex: 0 0 100%;
@@ -2742,12 +2742,10 @@ a {
       width: 65px;
       height: 65px; }
   #footend .form .logo {
-    width: 25%; }
+    position: relative; }
     #footend .form .logo .form-logo {
       width: 100%;
       height: auto; }
-  #footend .form .contact-form {
-    width: 75%; }
   #footend .form h3 {
     font-size: 1.5em;
     padding: 0 20px;
@@ -2767,6 +2765,9 @@ a {
       padding: 60px 0; }
       #footend .email-us {
         display: none; }
+      #footend .form .logo .form-logo {
+        width: 50%;
+        margin: 0 auto; }
       #footend .wpcf7-form .wpcf7-form-control-wrap input {
         width: 100%;
         margin-bottom: 5px;
@@ -2777,6 +2778,9 @@ a {
       padding: 60px 0; }
       #footend .email-us {
         display: none; }
+      #footend .form .logo .form-logo {
+        width: 50%;
+        margin: 0 auto; }
       #footend .wpcf7-form .wpcf7-form-control-wrap input {
         width: 100%;
         margin-bottom: 5px;
