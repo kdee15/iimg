@@ -20,7 +20,13 @@
                     $carousel->the_post();
                     ?>
 
-                    <li><img src="<?php the_field('carousel_image') ?>" alt="carousel image" class="carousel-pic" /></li>
+                    <li>
+                        <img src="<?php the_field('carousel_image') ?>" alt="carousel image" class="carousel-pic" />
+                        <aside class="carousel-text" style="<?php echo the_field('v_position') ?>: <?php the_field('v_value') ?>; <?php echo the_field('h_position') ?>: <?php the_field('v_value') ?>;">
+                            <h3 class="text"><?php the_title() ?></h3>
+                            <h5 class="text"><?php the_field('tagline') ?></h5>
+                        </aside>
+                    </li>
 
                     <?php
                   }
