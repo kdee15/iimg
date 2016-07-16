@@ -6,7 +6,7 @@
 
 // A.1.2. Scroll to top
 
-#wpfront-scroll-top-container { width: 65px; height: 65px;
+#wpfront-scroll-top-container { width: 65px; height: 65px; z-index: 100;
 
     img { width: 100%!important; height: 100%!important; }
 }

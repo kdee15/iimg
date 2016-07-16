@@ -2726,7 +2726,8 @@ a {
 
 #wpfront-scroll-top-container {
   width: 65px;
-  height: 65px; }
+  height: 65px;
+  z-index: 100; }
   #wpfront-scroll-top-container img {
     width: 100% !important;
     height: 100% !important; }
