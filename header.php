@@ -80,6 +80,11 @@
                             <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Linked In">
                         </a>
                     </li>
+                    <li>
+                        <a class="imgLink" href="https://instagram.com/iimgafrica" target="_blank">
+                            <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-instagram.svg" alt="Linked In">
+                        </a>
+                    </li>
 
                 </ul>
             </nav>
@@ -127,8 +132,13 @@
                     </a>
                 </li>
                 <li class="soc-med">
-                    <a class="imgLink" href="<?php the_field('linkedin') ?>" target="_blank">
-                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Linked In" class="icon li">
+                    <a class="imgLink" href="https://www.linkedin.com/company/iimg-africa-pty-ltd" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-linkedin.svg" alt="Linked In">
+                    </a>
+                </li>
+                <li class="soc-med">
+                    <a class="imgLink" href="https://instagram.com/iimgafrica" target="_blank">
+                        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/icon-instagram.svg" alt="Linked In">
                     </a>
                 </li>
 

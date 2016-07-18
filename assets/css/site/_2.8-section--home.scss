@@ -14,12 +14,20 @@
     .home-carousel {
         
         ul {
-            
+
             li {
                 
                 position: relative;
                 
-                .carousel-pic { position: relative; z-index: 0; }
+                .carousel-pic {
+                    
+                    //@include aspect-ratio (100%,40.5%);
+                    z-index: 0; 
+                    margin: 0;
+                    
+                    //.image { @include position (absolute, 0); }
+                
+                } 
                 .carousel-text {
                     position: absolute;
                     z-index: 10;
@@ -147,7 +155,7 @@
 
     .section-home {
 
-        padding-top: 170px; 
+        padding-top: 200px; 
     }
 }
 

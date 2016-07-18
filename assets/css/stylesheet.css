@@ -3118,6 +3118,8 @@ a {
             background: url("../images/icons/icon--email.svg") no-repeat top left; }
           #section-contact .section__branches .branch .branch-info .wrapper p.branch-item.address {
             background: url("../images/icons/icon--location.svg") no-repeat top left; }
+        #section-contact .section__branches .branch .branch-info .wrapper p a {
+          color: #fff; }
 
 @media only screen and (max-width: 320px) {
   #section-contact {
@@ -3145,8 +3147,8 @@ a {
   .section-home .home-carousel ul li {
     position: relative; }
     .section-home .home-carousel ul li .carousel-pic {
-      position: relative;
-      z-index: 0; }
+      z-index: 0;
+      margin: 0; }
     .section-home .home-carousel ul li .carousel-text {
       position: absolute;
       z-index: 10; }
@@ -3192,7 +3194,7 @@ a {
 
 @media only screen and (min-width: 1200px) {
   .section-home {
-    padding-top: 170px; } }
+    padding-top: 200px; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {

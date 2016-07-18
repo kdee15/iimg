@@ -38,7 +38,9 @@
                                 <h4 class="country"><?php the_field('country') ?></h4>
                                 <div class="content"><?php the_content() ?></div>
                                 <p class="branch-item tel"><?php the_field('telephone') ?></p>
-                                <p class="branch-item email"><?php the_field('email') ?></p>
+                                <p class="branch-item email">
+                                    <a href="<?php the_field('email') ?>"><?php the_field('email') ?></a>
+                                </p>
                                 <p class="branch-item address"><?php the_field('address') ?></p>
                             
                             </div>

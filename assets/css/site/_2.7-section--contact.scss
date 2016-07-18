@@ -56,7 +56,9 @@
                             &.tel { background: url('../images/icons/icon--phone.svg') no-repeat top left; }
                             &.email { background: url('../images/icons/icon--email.svg') no-repeat top left; }
                             &.address { background: url('../images/icons/icon--location.svg') no-repeat top left; }
-                        }  
+                        }
+                        
+                        a { color: $white; }
                     }
                 }
             }

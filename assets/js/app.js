@@ -208,7 +208,7 @@ var currentContent = '';
 
     $(document).ready(function(){
 
-        $('.section-home').attr("style","background-image:url('wp-content/themes/iimg/assets/images/background/iimg"+RandomNum+".jpg')");
+        //$('.section-home').attr("style","background-image:url('wp-content/themes/iimg/assets/images/background/iimg"+RandomNum+".jpg')");
 
     }); 
     
