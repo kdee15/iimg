@@ -6,27 +6,12 @@
 
 // A.1.1 LINKS
 
-.jcarousel-wrapper {
-    margin: 0 auto;
-    position: relative;
-    border: 0;
-}
+.jcarousel-wrapper { margin: 0 auto; position: relative; border: 0; }
 
 /** Carousel **/
 
-.jcarousel {
-    position: relative;
-    overflow: hidden;
-    width: 100%;
-}
-
-.jcarousel ul {
-    width: 20000em;
-    position: relative;
-    list-style: none;
-    margin: 0;
-    padding: 0;
-}
+.jcarousel { position: relative; overflow: hidden; width: 100%; }
+.jcarousel ul { width: 20000em; position: relative; list-style: none; margin: 0; padding: 0; }
 
 .jcarousel li {
     width: 200px;
@@ -37,18 +22,13 @@
     box-sizing: border-box;
 }
 
-.jcarousel img {
-    display: block;
-    width: 100%;
-    height: auto;
-}
-
+.jcarousel img { display: block; width: 100%; height: auto; }
 
 /** Carousel Pagination **/
 
 .jcarousel-pagination {
     position: absolute;
-    bottom: 15%;
+    bottom: 5%;
     left: 50%;
     transform: translate(-50%, 0);
     margin: 0;
@@ -82,7 +62,34 @@
 
 // A.1.1. END
 
+// A.1.2. HOMEPAGE CAROUSEL
 
+.home-carousel {
+
+    ul {
+
+        li {
+
+            position: relative;
+
+            .carousel-pic { z-index: 0;
+
+                .image { @include position (absolute, 0); }
+
+            } 
+            .carousel-text {
+                position: absolute;
+                z-index: 10;
+
+                .text { text-shadow: 0 0 10px $black; line-height: normal; margin: 0; }
+                h3 { margin-bottom: $baseline; font-size: 5vh; color: $white; }
+                h5 { font-size: 3vh; color: $white; }
+            }
+        }
+    }
+}
+
+// A.1.2. END
 
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -103,6 +110,7 @@
                 ul {
                     li {
                         
+                        .carousel-pic { @include aspect-ratio (100%, 165%); margin: 0; }
                         img { width: auto; height: 100%; }
 
                     }
@@ -130,6 +138,7 @@
                 ul {
                     li {
                         
+                        .carousel-pic { @include aspect-ratio (100%, 165%); margin: 0; }
                         img { width: auto; height: 100%; }
 
                     }
@@ -157,6 +166,7 @@
                 ul {
                     li {
                         
+                        .carousel-pic { @include aspect-ratio (100%, 115%); margin: 0; }
                         img { width: auto; height: 100%; }
 
                     }
@@ -164,9 +174,6 @@
             }
         }
     }
-
-    // A.1.5. END
-    
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -174,11 +181,18 @@
 // E. WIDE DESKTOP STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 @include media-query(desk) {
+        
+    // A.1.2. Carousel
 
-    // A.1.5. HIDE ON PHONES
+    .home-carousel { 
+        ul { 
+            li { 
+                .carousel-pic { @include aspect-ratio (100%, 56%); margin: 0; }
+            }
+        }
+    }
 
-
-    // A.1.5. END
+    // A.1.2. END
     
 }
 
@@ -188,10 +202,17 @@
 
 @include media-query(desk-wide) {
 
-    // A.1.5. HIDE ON PHONES
+    // A.1.2. Carousel
 
+    .home-carousel { 
+        ul { 
+            li { 
+                .carousel-pic { @include aspect-ratio (100%, 34.9%); margin: 0; }
+            }
+        }
+    }
 
-    // A.1.5. END
+    // A.1.2. END
     
 }
 

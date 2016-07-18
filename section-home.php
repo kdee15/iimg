@@ -22,6 +22,9 @@
                     <li>
                         <figure class="carousel-pic">
                             <img src="<?php the_field('carousel_image') ?>" alt="carousel image" class="image" />
+                            <style>
+                                .set-left { margin-left: <?php the_field('image_shift') ?>; }
+                            </style>
                         </figure>
                         <aside class="carousel-text" style="<?php echo the_field('v_position') ?>: <?php the_field('v_value') ?>; <?php echo the_field('h_position') ?>: <?php the_field('v_value') ?>;">
                             <h3 class="text"><?php the_title() ?></h3>

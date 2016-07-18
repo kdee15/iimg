@@ -87,7 +87,7 @@ var currentContent = '';
     
 // A.3. SCROLL TO LINK ------------------------------------------------------------------------------------------------
     
-    $(".textLink, .email-us, .home-link").click(function(event){
+    $('.textLink, .email-us, .home-link').click(function(event){
         
         event.preventDefault();
         // calculate destination place
@@ -110,7 +110,7 @@ var currentContent = '';
     
 // A.4. SHOW HIDE LOGO ------------------------------------------------------------------------------------------------
 
-    var t = $(".wrapper").offset().top;
+    var t = $('.wrapper').offset().top;
 
     $(document).scroll(function(){
 
@@ -151,6 +151,10 @@ var currentContent = '';
     (function($) {
         $(function() {
             var jcarousel = $('.jcarousel');
+            
+            if ($(window).width() < 769) {
+                $('.home-carousel .carousel-pic').addClass('set-left');
+            }
 
             jcarousel
                 .on('jcarousel:reload jcarousel:create', function () {
@@ -196,6 +200,16 @@ var currentContent = '';
                 });
         });
     })(jQuery);
+    
+    
+    function carousel_responsive() {
+
+        if ($(window).width() < 480) {
+            $('.home-carousel .carousel-pic').addClass('.set-left');
+            console.log('moer it');
+        }
+
+    };
     
 // A.7. END -----------------------------------------------------------------------------------------------------------
     

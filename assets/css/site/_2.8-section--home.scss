@@ -9,38 +9,6 @@
     text-align: center;
     @include position (fixed, 0);
 
-    // A.1. carousel
-    
-    .home-carousel {
-        
-        ul {
-
-            li {
-                
-                position: relative;
-                
-                .carousel-pic {
-                    
-                    //@include aspect-ratio (100%,40.5%);
-                    z-index: 0; 
-                    margin: 0;
-                    
-                    //.image { @include position (absolute, 0); }
-                
-                } 
-                .carousel-text {
-                    position: absolute;
-                    z-index: 10;
-
-                    .text { text-shadow: 0 0 10px $black; line-height: normal; margin: 0; }
-                    h3 { margin-bottom: $baseline; font-size: 5vh; color: $white; }
-                    h5 { font-size: 3vh; color: $white; }
-                }
-            }
-        }
-    }
-
-
         //A.1.1. page header
 
         //A.1.2. request info button
@@ -72,10 +40,7 @@
 
             //A.1.1. page header
 
-            .section-header {
-
-                padding: 0 0 0px 0;	
-            }
+            .section-header { padding: 0; }
 
         // A.1. End
 
@@ -99,11 +64,8 @@
 
             //A.1.1. page header
 
-            .section-header {
-
-                padding: 0 0 0px 0;	
-            }
-
+            .section-header { padding: 0; }
+        
         // A.1. End
 
     }  
@@ -121,17 +83,11 @@
         background-size: auto 100%;
         background-position: center center;
 
-        // A.1. Components
+        //A.1.1. page header
 
-            //A.1.1. page header
+        .section-header { padding: 0 0 0px 0; }
 
-            .section-header {
-
-                padding: 0 0 0px 0;	
-            }
-
-        // A.1. End
-
+        // A.1.1. End
     }  
 }
 
@@ -141,10 +97,7 @@
 
 @include media-query(desk) { 
 
-    .section-home {
-
-        padding-top: 170px; 
-    }
+    .section-home { padding-top: 199px; }
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -153,10 +106,7 @@
 
 @include media-query(desk-wide) { 
 
-    .section-home {
-
-        padding-top: 200px; 
-    }
+    .section-home { padding-top: 199px; }
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

@@ -2422,7 +2422,7 @@ a {
 /** Carousel Pagination **/
 .jcarousel-pagination {
   position: absolute;
-  bottom: 15%;
+  bottom: 5%;
   left: 50%;
   -webkit-transform: translate(-50%, 0);
       -ms-transform: translate(-50%, 0);
@@ -2451,20 +2451,89 @@ a {
   -webkit-box-shadow: 0 0 2px #F0EFE7;
           box-shadow: 0 0 2px #F0EFE7; }
 
+.home-carousel ul li {
+  position: relative; }
+  .home-carousel ul li .carousel-pic {
+    z-index: 0; }
+    .home-carousel ul li .carousel-pic .image {
+      position: absolute;
+      top: 0;
+      right: 0;
+      bottom: 0;
+      left: 0; }
+  .home-carousel ul li .carousel-text {
+    position: absolute;
+    z-index: 10; }
+    .home-carousel ul li .carousel-text .text {
+      text-shadow: 0 0 10px #000;
+      line-height: normal;
+      margin: 0; }
+    .home-carousel ul li .carousel-text h3 {
+      margin-bottom: 20px;
+      font-size: 5vh;
+      color: #fff; }
+    .home-carousel ul li .carousel-text h5 {
+      font-size: 3vh;
+      color: #fff; }
+
 @media only screen and (max-width: 320px) {
+  .jcarousel-wrapper.home-carousel .jcarousel ul li .carousel-pic {
+    position: relative;
+    width: 100%;
+    margin: 0; }
+    .jcarousel-wrapper.home-carousel .jcarousel ul li .carousel-pic:before {
+      content: "";
+      display: block;
+      padding-top: 165%; }
   .jcarousel-wrapper.home-carousel .jcarousel ul li img {
     width: auto;
     height: 100%; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
+  .jcarousel-wrapper.home-carousel .jcarousel ul li .carousel-pic {
+    position: relative;
+    width: 100%;
+    margin: 0; }
+    .jcarousel-wrapper.home-carousel .jcarousel ul li .carousel-pic:before {
+      content: "";
+      display: block;
+      padding-top: 165%; }
   .jcarousel-wrapper.home-carousel .jcarousel ul li img {
     width: auto;
     height: 100%; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
+  .jcarousel-wrapper.home-carousel .jcarousel ul li .carousel-pic {
+    position: relative;
+    width: 100%;
+    margin: 0; }
+    .jcarousel-wrapper.home-carousel .jcarousel ul li .carousel-pic:before {
+      content: "";
+      display: block;
+      padding-top: 115%; }
   .jcarousel-wrapper.home-carousel .jcarousel ul li img {
     width: auto;
     height: 100%; } }
+
+@media only screen and (min-width: 1024px) {
+  .home-carousel ul li .carousel-pic {
+    position: relative;
+    width: 100%;
+    margin: 0; }
+    .home-carousel ul li .carousel-pic:before {
+      content: "";
+      display: block;
+      padding-top: 56%; } }
+
+@media only screen and (min-width: 1200px) {
+  .home-carousel ul li .carousel-pic {
+    position: relative;
+    width: 100%;
+    margin: 0; }
+    .home-carousel ul li .carousel-pic:before {
+      content: "";
+      display: block;
+      padding-top: 34.9%; } }
 
 .modal-open {
   overflow: hidden; }
@@ -3144,25 +3213,6 @@ a {
   right: 0;
   bottom: 0;
   left: 0; }
-  .section-home .home-carousel ul li {
-    position: relative; }
-    .section-home .home-carousel ul li .carousel-pic {
-      z-index: 0;
-      margin: 0; }
-    .section-home .home-carousel ul li .carousel-text {
-      position: absolute;
-      z-index: 10; }
-      .section-home .home-carousel ul li .carousel-text .text {
-        text-shadow: 0 0 10px #000;
-        line-height: normal;
-        margin: 0; }
-      .section-home .home-carousel ul li .carousel-text h3 {
-        margin-bottom: 20px;
-        font-size: 5vh;
-        color: #fff; }
-      .section-home .home-carousel ul li .carousel-text h5 {
-        font-size: 3vh;
-        color: #fff; }
 
 @media only screen and (max-width: 320px) {
   .section-home {
@@ -3170,7 +3220,7 @@ a {
     background-size: auto 100%;
     background-position: center center; }
     .section-home .section-header {
-      padding: 0 0 0px 0; } }
+      padding: 0; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .section-home {
@@ -3178,7 +3228,7 @@ a {
     background-size: auto 100%;
     background-position: center center; }
     .section-home .section-header {
-      padding: 0 0 0px 0; } }
+      padding: 0; } }
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .section-home {
@@ -3190,11 +3240,11 @@ a {
 
 @media only screen and (min-width: 1024px) {
   .section-home {
-    padding-top: 170px; } }
+    padding-top: 199px; } }
 
 @media only screen and (min-width: 1200px) {
   .section-home {
-    padding-top: 200px; } }
+    padding-top: 199px; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
