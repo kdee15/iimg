@@ -2533,7 +2533,7 @@ a {
     .home-carousel ul li .carousel-pic:before {
       content: "";
       display: block;
-      padding-top: 34.9%; } }
+      padding-top: 38%; } }
 
 .modal-open {
   overflow: hidden; }
@@ -2666,7 +2666,7 @@ a {
     width: 40%;
     margin: 10px auto; }
     .modal .copy p {
-      font-size: 1.4vh; } }
+      font-size: 1.6vh; } }
 
 #masthead {
   position: fixed;
@@ -3099,12 +3099,13 @@ a {
       margin-bottom: 10px; }
     #section-team .team-list .team-item .team-text {
       margin: 0;
-      text-align: center;
-      color: #fff; }
+      text-align: center; }
     #section-team .team-list .team-item h3 {
-      font-size: 1em; }
+      font-size: 1em;
+      color: #BBC5CE; }
     #section-team .team-list .team-item h4 {
-      font-size: 0.75em; }
+      font-size: 0.75em;
+      color: #fff; }
     #section-team .team-list .team-item .pic-hover {
       position: absolute;
       top: 0;

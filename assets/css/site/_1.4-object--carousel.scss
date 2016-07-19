@@ -207,7 +207,7 @@
     .home-carousel { 
         ul { 
             li { 
-                .carousel-pic { @include aspect-ratio (100%, 34.9%); margin: 0; }
+                .carousel-pic { @include aspect-ratio (100%, 38%); margin: 0; }
             }
         }
     }
