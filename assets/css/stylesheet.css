@@ -3124,7 +3124,7 @@ a {
       border-radius: 100%; }
   #section-team .team-carousel {
     width: 60%;
-    margin-top: 80px; }
+    margin: 80px auto; }
   @media only screen and (max-width: 320px) {
     #section-team .section-header {
       padding-top: 80px;

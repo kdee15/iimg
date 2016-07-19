@@ -39,9 +39,13 @@
                                 <div class="content"><?php the_content() ?></div>
                                 <p class="branch-item tel"><?php the_field('telephone') ?></p>
                                 <p class="branch-item email">
-                                    <a href="<?php the_field('email') ?>"><?php the_field('email') ?></a>
+                                    <a href="mailto:<?php the_field('email') ?>"><?php the_field('email') ?></a>
                                 </p>
-                                <p class="branch-item address"><?php the_field('address') ?></p>
+                                <p class="branch-item address">
+                                    <a href="<?php the_field('gps') ?>" target="_blank">
+                                        <?php the_field('address') ?>
+                                    </a>
+                                </p>
                             
                             </div>
                         
