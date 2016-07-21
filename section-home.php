@@ -20,13 +20,14 @@
                     ?>
 
                     <li>
-                        <figure class="carousel-pic">
+                        <figure class="carousel-pic" id="pic<?php the_id() ?>">
                             <img src="<?php the_field('carousel_image') ?>" alt="carousel image" class="image" />
-                            <style>
-                                .set-left { margin-left: <?php the_field('image_shift') ?>; }
-                            </style>
                         </figure>
-                        <aside class="carousel-text" style="<?php echo the_field('v_position') ?>: <?php the_field('v_value') ?>; <?php echo the_field('h_position') ?>: <?php the_field('v_value') ?>;">
+                        <style>
+                            #pic<?php the_id() ?> .set-left { margin-left: <?php the_field('image_shift') ?>; }
+                            #pic<?php the_id() ?> .set-top { margin-top: <?php the_field('shift_top') ?>; }
+                        </style>
+                        <aside class="carousel-text" style="<?php the_field('v_position') ?>: <?php the_field('v_value') ?>; <?php the_field('h_position') ?>: <?php the_field('v_value') ?>;">
                             <h3 class="text"><?php the_title() ?></h3>
                             <h5 class="text"><?php the_field('tagline') ?></h5>
                         </aside>

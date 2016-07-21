@@ -2454,7 +2454,8 @@ a {
 .home-carousel ul li {
   position: relative; }
   .home-carousel ul li .carousel-pic {
-    z-index: 0; }
+    z-index: 0;
+    overflow: hidden; }
     .home-carousel ul li .carousel-pic .image {
       position: absolute;
       top: 0;
@@ -2534,6 +2535,16 @@ a {
       content: "";
       display: block;
       padding-top: 38%; } }
+
+@media (min-width: 1281px) {
+  .home-carousel ul li .carousel-pic {
+    position: relative;
+    width: 100%;
+    margin: 0; }
+    .home-carousel ul li .carousel-pic:before {
+      content: "";
+      display: block;
+      padding-top: 41%; } }
 
 .modal-open {
   overflow: hidden; }
@@ -3213,7 +3224,8 @@ a {
   top: 0;
   right: 0;
   bottom: 0;
-  left: 0; }
+  left: 0;
+  background: #000A3F; }
 
 @media only screen and (max-width: 320px) {
   .section-home {
