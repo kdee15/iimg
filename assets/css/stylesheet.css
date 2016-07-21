@@ -2662,7 +2662,8 @@ a {
     width: 40%;
     margin: 10px auto; }
     .modal .copy p {
-      font-size: 1.4vh; } }
+      font-size: 2.0vh;
+      line-height: 4vh; } }
 
 @media only screen and (min-width: 1200px) {
   .modal .modal__grid .grid-item .inner {
@@ -2677,7 +2678,8 @@ a {
     width: 40%;
     margin: 10px auto; }
     .modal .copy p {
-      font-size: 1.6vh; } }
+      font-size: 2.2vh;
+      line-height: 4vh; } }
 
 #masthead {
   position: fixed;
@@ -2690,7 +2692,8 @@ a {
     display: none; }
   #masthead .logo {
     width: 300px;
-    margin: 10px; }
+    margin: 10px;
+    display: inline-block; }
   #masthead .nav-main {
     background: #BBC5CE;
     text-align: right;
