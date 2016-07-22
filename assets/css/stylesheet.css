@@ -2655,15 +2655,15 @@ a {
   .modal .modal_img {
     width: 15%; }
   .modal h2 {
-    font-size: 1.125em; }
+    font-size: 1.5em; }
   .modal h3 {
-    font-size: 1em; }
+    font-size: 1.125em; }
   .modal .copy {
     width: 40%;
     margin: 10px auto; }
     .modal .copy p {
-      font-size: 2.0vh;
-      line-height: 4vh; } }
+      font-size: 1em;
+      line-height: 1.4em; } }
 
 @media only screen and (min-width: 1200px) {
   .modal .modal__grid .grid-item .inner {
@@ -2671,15 +2671,15 @@ a {
   .modal .modal_img {
     width: 10%; }
   .modal h2 {
-    font-size: 1.125em; }
+    font-size: 1.5em; }
   .modal h3 {
-    font-size: 1em; }
+    font-size: 1.125em; }
   .modal .copy {
     width: 40%;
     margin: 10px auto; }
     .modal .copy p {
-      font-size: 2.2vh;
-      line-height: 4vh; } }
+      font-size: 1em;
+      line-height: 1.4em; } }
 
 #masthead {
   position: fixed;
@@ -3110,7 +3110,8 @@ a {
       width: 50%;
       margin: 0 auto;
       border-radius: 100%;
-      margin-bottom: 10px; }
+      margin-bottom: 10px;
+      cursor: pointer !important; }
     #section-team .team-list .team-item .team-text {
       margin: 0;
       text-align: center; }
@@ -3135,7 +3136,8 @@ a {
               transform: translateX(-50%);
       left: 50%;
       width: 50%;
-      border-radius: 100%; }
+      border-radius: 100%;
+      cursor: pointer; }
   #section-team .team-carousel {
     width: 60%;
     margin: 80px auto; }
