@@ -2,7 +2,6 @@
 
 // A. LINK HOVER MIXIN ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-
 @mixin hover-effect() {
 
     transition: all 0.3s;
@@ -23,15 +22,16 @@
 
 }
 
-@mixin default-font  () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
-@mixin source-light  () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
-@mixin libre-header  () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
-
-@mixin bold-font  () { 
-    font-family: 'quattrocento-bold', 'arial black', helvetica, sans-serif; 
-}
-
 // A. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+// B. FONTS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+@mixin default-font () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
+@mixin source-light () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
+@mixin libre-header () { font-family: 'quattrocento', arial, helvetica, sans-serif; }
+@mixin bold-font    () { font-family: 'quattrocento-bold', 'arial black', helvetica, sans-serif; }
+
+// B. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // C.1. ABSOLUTE EQUAL SIDES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
@@ -61,11 +61,7 @@
 
 // C.2. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// B. VERTICAL ALIGN MIXIN ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-    // WHAT IT DOES: This will vertically align an object inside of a container.
-
-    // USAGE: Add "@include vertical-align(absolute);" into the desired class. You can choose your position element.
+// B. ALIGN MIXINS ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
     // B.1. Vertical Align --------------------------------------------------------------------------------------------
 
@@ -73,6 +69,18 @@
 
         position: $position;
         top: 50%;
+        transform: translateY(-50%);
+
+    }
+
+    // B.1. END -------------------------------------------------------------------------------------------------------
+
+    // B.1. Center Align ----------------------------------------------------------------------------------------------
+
+    @mixin center-align($position, $side){
+
+        position: $position;
+        $side: 50%;
         transform: translateY(-50%);
 
     }
@@ -99,10 +107,6 @@
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-// E. BORDERS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
 // F. ICONS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // F.1. ICONS +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -122,11 +126,7 @@
             polygon,
             circle,
             rect,
-            path {
-
-                fill: $color;
-
-            }
+            path { fill: $color; }
         }
     }
 
@@ -144,9 +144,7 @@
             polygon,
             circle,
             rect,
-            path {
-                fill: $color;
-            }
+            path { fill: $color; }
         }
     }
 
@@ -180,17 +178,9 @@
         position: relative;
         display: inline-block;
 
-        svg {
-
-            @include position (absolute, 0);
-
-        }
+        svg { @include position (absolute, 0); }
     }
 
 // F.1.4. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// F.1. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-
-// F. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // END OF FILE ########################################################################################################
