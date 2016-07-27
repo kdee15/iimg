@@ -42,7 +42,14 @@
             
             margin-bottom: $baseline;
             
-            .pic { width: 50%; margin: 0 auto; border-radius: 100%; margin-bottom: $baseline-small; }
+            .pic { 
+                width: 50%; 
+                margin: 0 auto; 
+                border-radius: 100%; 
+                margin-bottom: $baseline-small; 
+                cursor: pointer!important;
+            
+            }
             .team-text { margin: 0; text-align: center; }
             h3 { font-size: $normal; color: $kd-mauve; }
             h4 { font-size: $small; color: $white; }
@@ -51,8 +58,7 @@
             
             &:hover {
                 
-                .pic-hover { transform: translateX(-50%); left: 50%; width: 50%; border-radius: 100%; }    
-                
+                .pic-hover { transform: translateX(-50%); left: 50%; width: 50%; border-radius: 100%; cursor: pointer;} 
             }
         }
     }

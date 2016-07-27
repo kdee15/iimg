@@ -206,10 +206,10 @@
     .modal_img { width: 15%; }
     
     
-    h2 { font-size: $medium; }
-    h3 { font-size: $normal; }
+    h2 { font-size: $large; }
+    h3 { font-size: $medium; }
     
-    .copy { width: 40%; margin: $baseline-small auto; p { font-size: 2.0vh; line-height: 4vh; }}
+    .copy { width: 40%; margin: $baseline-small auto; p { font-size: $normal; line-height: 1.4em; }}
     
     // A.1.6. END
 }
@@ -236,10 +236,10 @@
 
     .modal_img { width: 10%; }
     
-    h2 { font-size: $medium; }
-    h3 { font-size: $normal; }
+    h2 { font-size: $large; }
+    h3 { font-size: $medium; }
     
-    .copy { width: 40%; margin: $baseline-small auto; p { font-size: 2.2vh; line-height: 4vh; }}
+    .copy { width: 40%; margin: $baseline-small auto; p { font-size: $normal; line-height: 1.4em; }}
     
     // A.1.6. END
 }
