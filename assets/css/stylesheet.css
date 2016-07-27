@@ -2745,7 +2745,7 @@ a {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       left: 0;
-      height: 40px;
+      height: 45px;
       display: block; }
     #masthead.grow ul {
       position: absolute;
@@ -2765,8 +2765,8 @@ a {
   background: #E6EBF1;
   z-index: 100; }
   .masthead-mobi .logo-mobi {
-    width: 120px;
-    height: auto;
+    width: auto;
+    height: 45px;
     margin-top: 10px;
     margin-left: 10px;
     display: inline-block; }
@@ -2789,7 +2789,11 @@ a {
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .masthead-mobi {
-    display: none; } }
+    display: block; }
+  #masthead {
+    display: none; }
+    #masthead nav {
+      display: none; } }
 
 @media only screen and (min-width: 1024px) {
   .masthead-mobi {

@@ -90,7 +90,7 @@
                 
                 @include vertical-align(absolute);
                 left: 0;
-                height: 40px;
+                height: 45px;
                 display: block;
                 
             }
@@ -116,7 +116,7 @@
     background: $kd-lilac;
     z-index: 100;
     
-    .logo-mobi { width: 120px; height: auto; margin-top: 10px; margin-left: 10px; display: inline-block; }
+    .logo-mobi { width: auto; height: 45px; margin-top: 10px; margin-left: 10px; display: inline-block; }
 
 }
 
@@ -166,10 +166,20 @@
 
 // D. DESKTOP STYLES ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-@include media-query(tablet) {
+@include media-query(tablet) { 
 
-    .masthead-mobi { display: none; }
+	.masthead-mobi { display: block; }
+    
+    #masthead {
+        
+        display: none;
 
+        nav {
+            
+            display: none;
+
+        }
+    }
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
