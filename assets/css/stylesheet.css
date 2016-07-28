@@ -2730,7 +2730,7 @@ a {
             color: #BBC5CE;
             text-decoration: none; }
   #masthead.grow {
-    height: 45px;
+    height: 60px;
     background: #BBC5CE; }
     #masthead.grow .logo {
       -webkit-transform: translateY(-200%);
@@ -2745,7 +2745,7 @@ a {
           -ms-transform: translateY(-50%);
               transform: translateY(-50%);
       left: 0;
-      height: 45px;
+      height: 60px;
       display: block; }
     #masthead.grow ul {
       position: absolute;
