@@ -1266,14 +1266,13 @@ a {
   right: 0; }
 
 .button {
-  color: #fff;
-  padding: 5px 10px;
-  border: solid 2px #fff;
-  position: relative; }
-  .button:hover {
-    background: #fff;
-    color: #000 !important;
-    text-decoration: none; }
+  padding: 10px 20px; }
+  .button.btn-blue {
+    background: #000A3F;
+    color: #FFFFFF; }
+    .button.btn-blue:hover {
+      color: #FFFFFF;
+      background: #BBC5CE; }
 
 .section-header {
   text-align: center; }
@@ -1311,7 +1310,7 @@ a {
   bottom: 0;
   left: 0;
   right: 0;
-  background-color: #fff; }
+  background-color: #FFFFFF; }
 
 .view {
   width: 100%;
@@ -1355,7 +1354,7 @@ a {
       -webkit-transform: translateX(-100%);
           -ms-transform: translateX(-100%);
               transform: translateX(-100%);
-      color: #fff; }
+      color: #FFFFFF; }
     .view .mask img {
       max-width: 75%; }
     .view .mask h2 {
@@ -1694,14 +1693,14 @@ a {
       display: block;
       padding: 20px 0;
       border-bottom: 1px solid #BBC5CE;
-      color: #fff;
+      color: #FFFFFF;
       text-align: center; }
       #mobi-nav ul .textLink a {
         display: block;
         text-align: center;
         padding: 10px 0;
         font-size: 1.5em;
-        color: #fff;
+        color: #FFFFFF;
         font-family: 'gow', helvetica, 'arial black'; }
         #mobi-nav ul .textLink a:hover {
           background: #DDDDDD; }
@@ -1734,7 +1733,7 @@ a {
       display: inline;
       vertical-align: middle; }
       .main-nav ul li a {
-        color: #fff;
+        color: #FFFFFF;
         outline: none;
         display: inline-block;
         vertical-align: middle;
@@ -1743,7 +1742,7 @@ a {
         .main-nav ul li a:hover {
           color: #AAAAAA;
           text-decoration: none;
-          text-shadow: 0 1px 3px #000; }
+          text-shadow: 0 1px 3px #000000; }
       .main-nav ul li a:link img {
         vertical-align: middle;
         width: 35px;
@@ -1752,7 +1751,7 @@ a {
         border-radius: 100%; }
       .main-nav ul li.current_page_item a {
         color: #AAAAAA;
-        text-shadow: 0 1px 3px #000; }
+        text-shadow: 0 1px 3px #000000; }
 
 @media only screen and (max-width: 320px) {
   #masthead .burger {
@@ -1838,7 +1837,7 @@ a {
       content: '';
       left: -15px;
       border: 3px solid #DDDDDD;
-      background: url("../images/site/icon-twitter.svg") center center no-repeat #fff;
+      background: url("../images/site/icon-twitter.svg") center center no-repeat #FFFFFF;
       background-size: 100% 100%;
       border-radius: 100%; }
     .tweets li a {
@@ -1859,11 +1858,11 @@ a {
     padding-bottom: 27px; }
     .card.lesson-card h3 {
       margin-bottom: 10px;
-      color: #fff; }
+      color: #FFFFFF; }
     .card.lesson-card p {
       margin: 0;
       margin-top: 10px;
-      color: #fff; }
+      color: #FFFFFF; }
   .card.news {
     position: relative;
     width: 99%;
@@ -1891,7 +1890,7 @@ a {
       left: 0; }
       .card.news .news__body h4 {
         background: rgba(0, 0, 0, 0.7);
-        color: #fff;
+        color: #FFFFFF;
         white-space: normal;
         position: absolute;
         bottom: 0;
@@ -1985,7 +1984,7 @@ a {
     padding-top: 100%; }
   .static-card.lesson .layer,
   .hscroller-card.lesson .layer {
-    color: #fff !important; }
+    color: #FFFFFF !important; }
     .static-card.lesson .layer.carousel__item,
     .hscroller-card.lesson .layer.carousel__item {
       position: absolute;
@@ -2076,7 +2075,7 @@ a {
   line-height: normal; }
 
 .card.small .card__body {
-  background: #fff; }
+  background: #FFFFFF; }
   .card.small .card__body .v-align .title {
     text-align: center;
     padding: 5px;
@@ -2102,10 +2101,10 @@ a {
     .card.medium .card__header .icon svg circle,
     .card.medium .card__header .icon svg rect,
     .card.medium .card__header .icon svg path {
-      fill: #fff; }
+      fill: #FFFFFF; }
 
 .card.medium .card__body {
-  background: #fff; }
+  background: #FFFFFF; }
   .card.medium .card__body .title {
     text-align: center;
     color: #555555;
@@ -2133,7 +2132,7 @@ a {
   .card.long .card__header {
     overflow: hidden;
     padding: 0;
-    background: #fff; }
+    background: #FFFFFF; }
     .card.long .card__header .icon {
       margin: 0;
       padding: 0;
@@ -2149,7 +2148,7 @@ a {
         .card.long .card__header .icon svg circle,
         .card.long .card__header .icon svg rect,
         .card.long .card__header .icon svg path {
-          fill: #fff; }
+          fill: #FFFFFF; }
       .card.long .card__header .icon:after {
         position: absolute;
         top: 0;
@@ -2235,7 +2234,7 @@ a {
     .icon-left svg circle,
     .icon-left svg rect,
     .icon-left svg path {
-      fill: #fff; }
+      fill: #FFFFFF; }
 
 .icon-right {
   margin: 0;
@@ -2248,7 +2247,7 @@ a {
     .icon-right svg circle,
     .icon-right svg rect,
     .icon-right svg path {
-      fill: #fff; }
+      fill: #FFFFFF; }
 
 .icon-thumb {
   text-align: center;
@@ -2283,7 +2282,7 @@ a {
       border-radius: 100%; }
 
 .fb {
-  background: #fff;
+  background: #FFFFFF;
   border-radius: 100%; }
   .fb .icon {
     margin: 0;
@@ -2299,7 +2298,7 @@ a {
         fill: #0064cd; }
 
 .google {
-  background: #fff;
+  background: #FFFFFF;
   border-radius: 100%; }
   .google .icon {
     margin: 0;
@@ -2316,10 +2315,10 @@ a {
 
 .tabs .tabs__header a {
   display: block !important;
-  background: #fff;
+  background: #FFFFFF;
   padding: 10px !important;
   text-align: center;
-  border-bottom: solid 6px #fff;
+  border-bottom: solid 6px #FFFFFF;
   -webkit-transition: all 0.3s;
           transition: all 0.3s; }
   .tabs .tabs__header a.active {
@@ -2466,16 +2465,16 @@ a {
     position: absolute;
     z-index: 10; }
     .home-carousel ul li .carousel-text .text {
-      text-shadow: 0 0 10px #000;
+      text-shadow: 0 0 10px #000000;
       line-height: normal;
       margin: 0; }
     .home-carousel ul li .carousel-text h3 {
       margin-bottom: 20px;
       font-size: 5vh;
-      color: #fff; }
+      color: #FFFFFF; }
     .home-carousel ul li .carousel-text h5 {
       font-size: 3vh;
-      color: #fff; }
+      color: #FFFFFF; }
 
 @media only screen and (max-width: 320px) {
   .jcarousel-wrapper.home-carousel .jcarousel ul li .carousel-pic {
@@ -2564,15 +2563,15 @@ a {
   background: rgba(0, 0, 0, 0.9);
   z-index: 1000; }
   .modal h2 {
-    color: #fff;
+    color: #FFFFFF;
     margin: 0;
     margin-top: 10px; }
   .modal h3 {
-    color: #fff;
+    color: #FFFFFF;
     margin: 0;
     margin-bottom: 20px; }
   .modal .copy p {
-    color: #fff;
+    color: #FFFFFF;
     line-height: normal; }
 
 .modal__grid {
@@ -2592,7 +2591,7 @@ a {
 
 .modalClose {
   position: absolute;
-  color: #fff;
+  color: #FFFFFF;
   background: #000A3F;
   top: 20px;
   font-size: 1.5em;
@@ -2601,7 +2600,7 @@ a {
   height: 40px;
   z-index: 999;
   border-radius: 100%;
-  border: solid 1px #fff; }
+  border: solid 1px #FFFFFF; }
   .modalClose span {
     display: block;
     text-align: center;
@@ -2710,13 +2709,13 @@ a {
         display: inline;
         vertical-align: middle; }
         #masthead .nav-main ul li a {
-          color: #000;
+          color: #000000;
           outline: none;
           display: inline-block;
           vertical-align: middle;
           margin-right: 10px; }
           #masthead .nav-main ul li a:hover {
-            color: #fff;
+            color: #FFFFFF;
             text-decoration: none; }
         #masthead .nav-main ul li a:link img {
           vertical-align: middle;
@@ -2923,7 +2922,7 @@ a {
   #section-our-vision .our-vision p {
     text-align: left;
     margin-left: 20px;
-    color: #fff; }
+    color: #FFFFFF; }
   @media only screen and (max-width: 320px) {
     #section-our-vision {
       padding: 0 0 40px 0; }
@@ -2975,7 +2974,7 @@ a {
       position: absolute;
       top: 5%;
       left: 5%;
-      color: #fff;
+      color: #FFFFFF;
       text-shadow: 0 0 10px #555555;
       line-height: normal; }
     #section-services .services .one-half .figure__image, #section-services .services .two-quarters .figure__image, #section-services .services .three-sixths .figure__image, #section-services .services .four-eighths .figure__image, #section-services .services .five-tenths .figure__image, #section-services .services .six-twelfths .figure__image, #section-services .services .tabs .tabs__header li .figure__image, .tabs .tabs__header #section-services .services li .figure__image {
@@ -3003,7 +3002,7 @@ a {
         left: 20px;
         top: auto; }
         #section-services .services .one-half .service-info .wrapper p, #section-services .services .two-quarters .service-info .wrapper p, #section-services .services .three-sixths .service-info .wrapper p, #section-services .services .four-eighths .service-info .wrapper p, #section-services .services .five-tenths .service-info .wrapper p, #section-services .services .six-twelfths .service-info .wrapper p, #section-services .services .tabs .tabs__header li .service-info .wrapper p, .tabs .tabs__header #section-services .services li .service-info .wrapper p {
-          color: #fff;
+          color: #FFFFFF;
           line-height: normal;
           margin: 0; }
     #section-services .services .one-half:hover, #section-services .services .two-quarters:hover, #section-services .services .three-sixths:hover, #section-services .services .four-eighths:hover, #section-services .services .five-tenths:hover, #section-services .services .six-twelfths:hover, #section-services .services .tabs .tabs__header li:hover, .tabs .tabs__header #section-services .services li:hover {
@@ -3028,7 +3027,7 @@ a {
         display: inline-block;
         background: #000A3F;
         padding: 10px;
-        color: #fff;
+        color: #FFFFFF;
         text-align: center;
         margin: 2px 0; }
   #section-services .grid__logos {
@@ -3124,7 +3123,7 @@ a {
       color: #BBC5CE; }
     #section-team .team-list .team-item h4 {
       font-size: 0.75em;
-      color: #fff; }
+      color: #FFFFFF; }
     #section-team .team-list .team-item .pic-hover {
       position: absolute;
       top: 0;
@@ -3186,7 +3185,7 @@ a {
     #section-contact .section__branches .branch .branch-info .wrapper {
       margin: 0 20px; }
       #section-contact .section__branches .branch .branch-info .wrapper h3, #section-contact .section__branches .branch .branch-info .wrapper p, #section-contact .section__branches .branch .branch-info .wrapper div {
-        color: #fff; }
+        color: #FFFFFF; }
       #section-contact .section__branches .branch .branch-info .wrapper h3 {
         margin: 0;
         margin-bottom: 10px;
@@ -3209,7 +3208,7 @@ a {
           #section-contact .section__branches .branch .branch-info .wrapper p.branch-item.address {
             background: url("../images/icons/icon--location.svg") no-repeat top left; }
         #section-contact .section__branches .branch .branch-info .wrapper p a {
-          color: #fff; }
+          color: #FFFFFF; }
 
 @media only screen and (max-width: 320px) {
   #section-contact {
@@ -3271,3 +3270,28 @@ a {
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {
     padding: 0; } }
+
+#page-195 {
+  margin-top: 240px; }
+  #page-195 .entry-header h1 {
+    font-size: 1.7em;
+    margin-bottom: 20px; }
+    #page-195 .entry-header h1 a {
+      color: #000A3F; }
+  #page-195 .button {
+    margin: 40px auto; }
+  @media only screen and (min-width: 481px) and (max-width: 1023px) {
+    #page-195 {
+      margin-top: 100px; }
+      #page-195 .container {
+        margin: 20px; } }
+  @media only screen and (min-width: 321px) and (max-width: 480px) {
+    #page-195 {
+      margin-top: 100px; }
+      #page-195 .container {
+        margin: 20px; } }
+  @media only screen and (max-width: 320px) {
+    #page-195 {
+      margin-top: 100px; }
+      #page-195 .container {
+        margin: 20px; } }
