@@ -2,7 +2,7 @@
 <!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
-<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]--> 
 <head>
 
     <meta charset="utf-8">
@@ -35,7 +35,7 @@
 
 </head>
 
-<body <?php body_class(); ?> class="page-home" id="page-home" >
+<body <?php body_class(); ?> class="page">
     <!--[if lt IE 7]>
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
@@ -60,10 +60,10 @@
 
                 <!-- C.1.2. NAV -->
                 <ul>
-                    <li><a href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>#section-services">We Offer</a></li>
-                    <li><a href="<?php bloginfo('url'); ?>#section-contact">Talk to Us</a></li>
+                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
+                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
+                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">We Offer</a></li>
+                    <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
 
                     <li>
                         <a class="imgLink" href="https://www.facebook.com/IIMG-Africa-578378702342326/" target="_blank">
@@ -102,7 +102,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-mobi"/>
             </a>
             
-            <a class="c-hamburger c-hamburger--rot burger reveal" href="#mobi-nav">
+            <a class="c-hamburger c-hamburger--htx burger reveal" href="#mobi-nav">
                 <span>toggle menu</span>
             </a> 
             
@@ -113,10 +113,10 @@
 
             <!-- C.1.2. NAV -->
             <ul>
-                <li><a class="textLink" href="#section-our-vision">Our Vision</a></li>
-                <li><a class="textLink" href="#section-team">Meet the Team</a></li>
-                <li><a class="textLink" href="#section-services">We Offer</a></li>
-                <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
+                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
+                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
+                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">We Offer</a></li>
+                <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
 
             </ul>
             

@@ -30,6 +30,7 @@
         padding: 0;
         padding-top: $baseline;
         
+        .pagelink,
         .textLink {
             
             list-style-type: none;
@@ -142,8 +143,8 @@
 
 @include media-query(tablet) { 
 	
-    #masthead { .burger { display: none; }}
-    .mobi-nav { display: none; }
+    #masthead { .burger { display: block; }}
+    .main-nav { display: none; }
 }
 
 // D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++

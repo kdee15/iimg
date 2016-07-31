@@ -4,47 +4,59 @@
 
     <!-- C.2. SITE MAST ------------------------------------------------------------------------------------------- -->
 
-    <section id="mast">
 
-        <!-- C.2.1. INTRO ----------------------------------------------------------------------------------------- -->
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
+                <br/>
 
-        <div class="section__articles">
+                <h1>Blog Page - Archive!!!!!!!!!!!!!!!!!!</h1>
 
-            <?php
-                $args = array(
-                    'post_type' => 'post',
-                    'post_status' => 'publish'
-                );
-                $posts = new WP_Query( $args );
-                if( $posts->have_posts() ) {
-                  while( $posts->have_posts() ) {
-                    $posts->the_post();
-                    ?>
 
-                    <article class="article">
-                        <a class="article__figure" href="<?php the_permalink() ?>">  
-                            <div class="article__body">
-                                <h2><?php the_title(); ?></h2>
-                                <p>
-                                    <?php the_excerpt(); ?>
-                                </p>
-                            </div>
-                        </a>
-                    </article>
+                            <?php
+                                $args=array(
+                                  'post_type' => 'post',
+                                  'post_status' => 'publish',
+                                  'posts_per_page' => -3,
+                                  'caller_get_posts'=> 1
+                                );
+                                $my_query = null;
+                                $my_query = new WP_Query($args);
 
-                    <?php
-                  }
-                }
-            ?>
+                                if( $my_query->have_posts() ) {
+                                  while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-        </div>
-        
-        <!-- C.2.1. End ------------------------------------------------------------------------------------------- -->
+                                    <?php the_title() ?>
 
-    </section>
-    
-    <!-- C.2. END ------------------------------------------------------------------------------------------------- -->
+                                    <?php
+                                  //the_excerpt();
+                                  endwhile;
+                                }
 
+                                wp_reset_query();  // Restore global post data stomped by the_post().
+                            ?>
+                            
+                        </section>
+                        
+                        
+<?php /* Display navigation to next/previous pages when applicable */ ?>
+<?php if (  $wp_query->max_num_pages > 1 ) : ?>
+				<div id="nav-below" class="navigation">
+					<div class="nav-previous"><?php next_posts_link( __( '<span class="meta-nav">&larr;</span> Older posts', 'matty' ) ); ?></div>
+					<div class="nav-next"><?php previous_posts_link( __( 'Newer posts <span class="meta-nav">&rarr;</span>', 'matty' ) ); ?></div>
+				</div><!-- #nav-below -->
+<?php endif; ?>     
+
+<?php get_footer(); ?>
 <!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
 <!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

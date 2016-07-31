@@ -3,7 +3,7 @@
 <!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8" <?php language_attributes(); ?>> <![endif]-->
 <!--[if IE 8]>         <html class="no-js lt-ie9" <?php language_attributes(); ?>> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js" <?php language_attributes(); ?>> <!--<![endif]-->
-<head>
+<head> 
 
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -64,7 +64,8 @@
                     <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                     <li><a class="textLink" href="#section-services">We Offer</a></li>
                     <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
-                    <li><a class="" href="?page_id=195">Compliance</a></li>
+                    <li><a class="pagelink" href="?page_id=195">Blog</a></li>
+                    <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
 
                     <li>
                         <a class="imgLink" href="https://www.facebook.com/IIMG-Africa-578378702342326/" target="_blank">
@@ -103,7 +104,7 @@
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-mobi"/>
             </a>
             
-            <a class="c-hamburger c-hamburger--rot burger reveal" href="#mobi-nav">
+            <a class="c-hamburger c-hamburger--htx burger reveal" href="#mobi-nav">
                 <span>toggle menu</span>
             </a> 
             
@@ -118,7 +119,7 @@
                 <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                 <li><a class="textLink" href="#section-services">We Offer</a></li>
                 <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
-                <li><a class="" href="?page_id=195">Compliance</a></li>
+                <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
 
             </ul>
             
