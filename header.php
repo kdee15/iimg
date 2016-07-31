@@ -64,6 +64,7 @@
                     <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                     <li><a class="textLink" href="#section-services">We Offer</a></li>
                     <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
+                    <li><a class="" href="?page_id=195">Compliance</a></li>
 
                     <li>
                         <a class="imgLink" href="https://www.facebook.com/IIMG-Africa-578378702342326/" target="_blank">
@@ -117,6 +118,7 @@
                 <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                 <li><a class="textLink" href="#section-services">We Offer</a></li>
                 <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
+                <li><a class="" href="?page_id=195">Compliance</a></li>
 
             </ul>
             

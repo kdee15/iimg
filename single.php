@@ -1,31 +1,91 @@
-<?php get_header(); ?>
+<?php
+/**
+ * The main template file
+ *
+ * @package WordPress
+ * @subpackage Spartan
+ * @since Spartan 1.0
+ */
 
-	<?php if (have_posts()) : while (have_posts()) : the_post(); ?>
+get_header(); ?>
 
-		<div <?php post_class() ?> id="post-<?php the_ID(); ?>">
-			
-			<h2><?php the_title(); ?></h2>
-			
-<!-- 			<?php include (TEMPLATEPATH . '/inc/meta.php' ); ?>
- -->
-			<div class="entry">
-				
-				<?php the_content(); ?>
+<!-- C. WORK AREA +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
 
-				<?php wp_link_pages(array('before' => 'Pages: ', 'next_or_number' => 'number')); ?>
-				
-				<?php the_tags( 'Tags: ', ', ', ''); ?>
+    <!-- C.2. SITE MAST ------------------------------------------------------------------------------------------- -->
 
-			</div>
-			
-			<?php edit_post_link('Edit this entry','','.'); ?>
-			
-		</div>
+    <section class="page" id="mast">
 
-	<?php comments_template(); ?>
+        <!-- C.2.1. INTRO ----------------------------------------------------------------------------------------- -->
 
-	<?php endwhile; endif; ?>
-	
-<?php get_sidebar(); ?>
+        <?php get_template_part( 'section-front' ); ?>
+        
+        <figure class="article__figure">
+            <span class="image-wrapper">
+                <img class="image" src="<?php the_field('image') ?>" alt="<?php the_title(); ?>" />
+            </span>    
+        </figure>
 
+        <!-- C.2.1. End ------------------------------------------------------------------------------------------- -->
+        
+        <!-- C.2.2. SLIDER AREA ----------------------------------------------------------------------------------- -->
+        
+        <div class="wrapper">
+            
+            <section class="content">
+
+                <!-- C.2.2.1. ABOUT US ---------------------------------------------------------------------------- -->
+
+                <!-- C.2.4.1.1. Dynanic Content area -->
+
+                <?php while ( have_posts() ) : the_post(); ?>
+
+                <h3><?php the_title(); ?></h3>	
+
+                <?php the_content(); ?>
+
+                <!-- .nav-single -->
+
+                <?php endwhile; // end of the loop. ?>
+
+                <!-- C.1.1 End -->
+
+                <!-- C.2.2.1. END --------------------------------------------------------------------------------- -->
+
+            </section>
+            
+            <!-- C.2.2.1. ABOUT US -------------------------------------------------------------------------------- -->
+            
+            <?php get_template_part( 'section-contact' ); ?>
+            
+            <!-- C.2.2.1. END ------------------------------------------------------------------------------------- -->
+            
+                
+        </div>
+        
+        <aside class="section-midbar no-tab">
+            
+            <?php dynamic_sidebar( 'twitter' ); ?>
+
+        </aside>
+                
+        <aside class="section-sidebar no-mobile">
+            
+            <?php get_template_part( 'section-sidebar' ); ?>
+
+        </aside>
+        
+        <!-- C.2.2. End ------------------------------------------------------------------------------------------- -->
+
+    </section>
+    
+    <!-- C.2. END ------------------------------------------------------------------------------------------------- -->
 <?php get_footer(); ?>
+<!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- D. JAVASCRIPT ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
+
+<!-- D.1. FOOTER JS -->
+
+<?php get_template_part( 'inc/footer-scripts' ); ?>
+
+<!-- D. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
