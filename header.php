@@ -62,10 +62,10 @@
                 <ul>
                     <li><a class="textLink" href="#section-our-vision">Our Vision</a></li>
                     <li><a class="textLink" href="#section-team">Meet the Team</a></li>
-                    <li><a class="textLink" href="#section-services">We Offer</a></li>
+                    <li><a class="textLink" href="#section-services">What We Offer</a></li>
+                    <li><a class="pagelink" href="?page_id=212">PR & Media</a></li>
+                    <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
                     <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
-                    <li><a class="pagelink" href="?page_id=195">Blog</a></li>
-                    <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
 
                     <li>
                         <a class="imgLink" href="https://www.facebook.com/IIMG-Africa-578378702342326/" target="_blank">
@@ -117,9 +117,10 @@
             <ul>
                 <li><a class="textLink" href="#section-our-vision">Our Vision</a></li>
                 <li><a class="textLink" href="#section-team">Meet the Team</a></li>
-                <li><a class="textLink" href="#section-services">We Offer</a></li>
+                <li><a class="textLink" href="#section-services">What We Offer</a></li>
+                <li><a class="pagelink" href="?page_id=212">PR & Media</a></li>
+                <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
                 <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
-                <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
 
             </ul>
             

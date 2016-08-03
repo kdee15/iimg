@@ -1,22 +1,28 @@
-// 3. PAGE [ 3.2. COMPLIANCE ]  #######################################################################################
+// 3. PAGE [ 3.3. BLOG LIST ]  ########################################################################################
 
 // A. GLOBAL STYLES +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
 // A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
 
-#page-206,
-#page-192,
-#page-195 {
+.single-post { img { max-width: 100%; height: auto; }}
+
+.single-post,
+#page-212,
+#page-193 {
     
     margin-top: 240px;
     
-    .entry-header {
-        h1 { font-size: $x-large; margin-bottom: $baseline;
-            a { color: $kd-royal; }
-        }
+    .articles { padding-bottom: $baseline-medium; }
+    .article { 
+    
+        @extend .feature--one-whole;
+        @extend .mobile--one-whole;
+        @extend .tablet--one-half;
+        
+        position: relative; 
+        overflow: hidden; 
     }
     
-    .button { margin: $baseline-medium auto; }
     
 // A.1. END -----------------------------------------------------------------------------------------------------------
 

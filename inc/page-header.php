@@ -54,7 +54,7 @@
             <nav class="nav-main">
 
                 <!-- C.1.1. Logo -->
-                <a href="#page-home" class="home-link">
+                <a href="<?php bloginfo('url'); ?>" class="logo">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-small"/>
                 </a>
 
@@ -62,8 +62,10 @@
                 <ul>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
-                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">We Offer</a></li>
-                    <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
+                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">What We Offer</a></li>
+                    <li><a class="pagelink" href="?page_id=212">PR & Media</a></li>
+                    <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
+                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-contact">Talk to us</a></li>
 
                     <li>
                         <a class="imgLink" href="https://www.facebook.com/IIMG-Africa-578378702342326/" target="_blank">
@@ -115,8 +117,10 @@
             <ul>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
-                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">We Offer</a></li>
-                <li><a class="pagelink" href="?page_id=192">Compliance</a></li>
+                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">What We Offer</a></li>
+                <li><a class="pagelink" href="?page_id=212">PR & Media</a></li>
+                <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
+                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-contact">Talk to us</a></li>
 
             </ul>
             
