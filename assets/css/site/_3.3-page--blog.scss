@@ -7,13 +7,17 @@
 .single-post { img { max-width: 100%; height: auto; }}
 
 .single-post,
+#page-id-212,
+#page-id-193,
 #page-212,
 #page-193 {
     
+    margin: 0;
     margin-top: 240px;
-    background: $kd-royal;
+    background: $kd-royal; 
     
     .articles { padding-bottom: $baseline-medium; }
+    
     .article { 
     
         @extend .feature--one-whole;
@@ -23,7 +27,6 @@
         position: relative; 
         overflow: hidden; 
     }
-    
     
 // A.1. END -----------------------------------------------------------------------------------------------------------
 
@@ -74,6 +77,6 @@
 
 // F. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 
-}    
-    
+}
+
 // END OF FILE ########################################################################################################

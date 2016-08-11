@@ -110,7 +110,7 @@ var currentContent = '';
     
 // A.4. SHOW HIDE LOGO ------------------------------------------------------------------------------------------------
 
-    var t = $('.wrapper').offset().top;
+    var t = $('.wrapper, .mast').offset().top;
 
     $(document).scroll(function(){
 

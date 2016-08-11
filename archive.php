@@ -4,52 +4,37 @@
 
     <!-- C.2. SITE MAST ------------------------------------------------------------------------------------------- -->
 
+    <h1>Blog Archive</h1>
 
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
-                <br/>
+        <?php
 
-                <h1>Blog Archive!!!!!!!!!!!!!!!!!!</h1>
+            // get all the categories from the database
+            $cats = get_categories(); 
 
-						<?php
+            // loop through the categries
+            foreach ($cats as $cat) {
 
-							// get all the categories from the database
-							$cats = get_categories(); 
+                // setup the cateogory ID
+                $cat_id= $cat->term_id;
 
-							// loop through the categries
-							foreach ($cats as $cat) {
+                // Make a header for the cateogry
+                echo "<h3 class='category-title'>".$cat->name."</h3>";
 
-								// setup the cateogory ID
-								$cat_id= $cat->term_id;
+                // create a custom wordpress query
+                query_posts("cat=$cat_id&posts_per_page=100");
 
-								// Make a header for the cateogry
-								echo "<h3 class='category-title'>".$cat->name."</h3>";
+                // start the wordpress loop!
+                if (have_posts()) : while (have_posts()) : the_post(); ?>
 
-								// create a custom wordpress query
-								query_posts("cat=$cat_id&posts_per_page=100");
+                <?php // create our link now that the post is setup ?>
 
-								// start the wordpress loop!
-								if (have_posts()) : while (have_posts()) : the_post(); ?>
+                    <?php the_title() ?>
 
-								<?php // create our link now that the post is setup ?>
+                <?php endwhile; endif; // done our wordpress loop. Will start again for each category ?>
 
-									<?php the_title() ?>
+            <?php } // done the foreach statement 
 
-								<?php endwhile; endif; // done our wordpress loop. Will start again for each category ?>
-
-							<?php } // done the foreach statement 
-
-						?>
+        ?>
 
 <?php get_footer(); ?>
 <!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->

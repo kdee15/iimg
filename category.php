@@ -2,28 +2,6 @@
 /* template name: Posts by Category! */
 get_header(); ?>
 
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-<br/>
-
     <?php 
 
         // Willem se kak
@@ -49,9 +27,5 @@ get_header(); ?>
                 <?php the_title() ?>
 
             <?php endwhile; endif; // done our wordpress loop. Will start again for each category ?>
-
-
-	
-
 
 <?php get_footer(); ?>

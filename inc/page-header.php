@@ -47,14 +47,15 @@
         <header id="masthead" class="masthead">
 
             <!-- C.1.1. Logo -->
-            <a href="<?php bloginfo('url'); ?>">
+            <a href="<?php bloginfo('url'); ?>" class="page-home-link">
                 <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo.png" alt="" class="logo"/>
-            </a>    
+            </a>
+            
             <!-- C.1.2. Navigation -->
             <nav class="nav-main">
 
                 <!-- C.1.1. Logo -->
-                <a href="<?php bloginfo('url'); ?>" class="logo">
+                <a href="<?php bloginfo('url'); ?>" class="page-home-link">
                     <img src="<?php echo get_template_directory_uri(); ?>/assets/images/site/logo-small.png" alt="" class="logo-small"/>
                 </a>
 
@@ -62,7 +63,7 @@
                 <ul>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
-                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">What We Offer</a></li>
+                    <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">We Offer</a></li>
                     <li><a class="pagelink" href="?page_id=212">PR & Media</a></li>
                     <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-contact">Talk to us</a></li>
@@ -117,7 +118,7 @@
             <ul>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
-                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">What We Offer</a></li>
+                <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">We Offer</a></li>
                 <li><a class="pagelink" href="?page_id=212">PR & Media</a></li>
                 <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-contact">Talk to us</a></li>

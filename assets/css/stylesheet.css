@@ -201,6 +201,8 @@ html, body {
 
 @media only screen and (max-width: 320px) {
   .feature--one-whole, .modal__grid .grid-item, #footend .form .logo, #footend .form .contact-form, #section-our-vision .figure__our-vision, #section-our-vision .our-vision, #section-services .services .one-half, #section-services .services .two-quarters, #section-services .services .three-sixths, #section-services .services .four-eighths, #section-services .services .five-tenths, #section-services .services .six-twelfths, #section-services .services .tabs .tabs__header li, .tabs .tabs__header #section-services .services li, #section-contact .section__branches .branch .figure__image, #section-contact .section__branches .branch .branch-info, .single-post .article,
+  #page-id-212 .article,
+  #page-id-193 .article,
   #page-212 .article,
   #page-193 .article {
     -webkit-box-flex: 0;
@@ -320,6 +322,8 @@ html, body {
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .mobile--one-whole, .modal__grid .grid-item, #footend .form .logo, #footend .form .contact-form, #section-our-vision .figure__our-vision, #section-our-vision .our-vision, #section-services .services .one-half, #section-services .services .two-quarters, #section-services .services .three-sixths, #section-services .services .four-eighths, #section-services .services .five-tenths, #section-services .services .six-twelfths, #section-services .services .tabs .tabs__header li, .tabs .tabs__header #section-services .services li, #section-contact .section__branches .branch .figure__image, #section-contact .section__branches .branch .branch-info, .single-post .article,
+  #page-id-212 .article,
+  #page-id-193 .article,
   #page-212 .article,
   #page-193 .article {
     -webkit-box-flex: 0;
@@ -444,6 +448,8 @@ html, body {
         -ms-flex: 0 0 100%;
             flex: 0 0 100%; }
   .tablet--one-half, .tablet--two-quarters, .tablet--three-sixths, .tablet--four-eighths, .tablet--five-tenths, .tablet--six-twelfths, .single-post .article,
+  #page-id-212 .article,
+  #page-id-193 .article,
   #page-212 .article,
   #page-193 .article {
     -webkit-box-flex: 0;
@@ -2702,10 +2708,12 @@ figure {
 #footend {
   background: #E6EBF1;
   padding: 60px 0; }
+  #footend .page-email-us,
   #footend .email-us {
     position: fixed;
     bottom: 20px;
     right: 85px; }
+    #footend .page-email-us .icon,
     #footend .email-us .icon {
       width: 65px;
       height: 65px; }
@@ -3202,43 +3210,62 @@ figure {
   height: auto; }
 
 .single-post,
+#page-id-212,
+#page-id-193,
 #page-212,
 #page-193 {
+  margin: 0;
   margin-top: 240px;
   background: #000A3F; }
   .single-post .articles,
+  #page-id-212 .articles,
+  #page-id-193 .articles,
   #page-212 .articles,
   #page-193 .articles {
     padding-bottom: 40px; }
   .single-post .article,
+  #page-id-212 .article,
+  #page-id-193 .article,
   #page-212 .article,
   #page-193 .article {
     position: relative;
     overflow: hidden; }
   @media only screen and (min-width: 481px) and (max-width: 1023px) {
     .single-post,
+    #page-id-212,
+    #page-id-193,
     #page-212,
     #page-193 {
       margin-top: 100px; }
       .single-post .container,
+      #page-id-212 .container,
+      #page-id-193 .container,
       #page-212 .container,
       #page-193 .container {
         margin: 20px; } }
   @media only screen and (min-width: 321px) and (max-width: 480px) {
     .single-post,
+    #page-id-212,
+    #page-id-193,
     #page-212,
     #page-193 {
       margin-top: 100px; }
       .single-post .container,
+      #page-id-212 .container,
+      #page-id-193 .container,
       #page-212 .container,
       #page-193 .container {
         margin: 20px; } }
   @media only screen and (max-width: 320px) {
     .single-post,
+    #page-id-212,
+    #page-id-193,
     #page-212,
     #page-193 {
       margin-top: 100px; }
       .single-post .container,
+      #page-id-212 .container,
+      #page-id-193 .container,
       #page-212 .container,
       #page-193 .container {
         margin: 20px; } }

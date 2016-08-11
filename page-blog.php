@@ -10,7 +10,7 @@
         
         <!-- C.2.1. BLOG ARTICLE AREA ----------------- -->
         
-        <h1>PR & Marketing<h1>
+        <h1>PR &amp; Marketing</h1>
         
         <section class="articles grid">
 
@@ -26,19 +26,19 @@
                 if( $my_query->have_posts() ) {
                   while ($my_query->have_posts()) : $my_query->the_post(); ?>
 
-                    <article class="one-quarter article">
-                        <a class="blog card" href="<?php the_permalink() ?>">
-                            <figure class="figure__image">
-                                <img src="<?php the_field('blog_pic') ?>" alt="<?php the_title() ?>" class="blog-image" />
-                            </figure>
-                            <section class="blog-info">
-                                <h2><?php the_title() ?></h2>
-                                <span class="excerpt"><?php the_excerpt() ?></span>
-                            </section>
-                        </a>
-                    </article>
+                <article class="one-quarter article">
+                    <a class="blog card" href="<?php the_permalink() ?>">
+                        <figure class="figure__image">
+                            <img src="<?php the_field('blog_pic') ?>" alt="<?php the_title() ?>" class="blog-image" />
+                        </figure>
+                        <section class="blog-info">
+                            <h2><?php the_title() ?></h2>
+                            <span class="excerpt"><?php the_excerpt() ?></span>
+                        </section>
+                    </a>
+                </article>
 
-                    <?php
+                <?php
                   endwhile;
                 }
 
@@ -73,8 +73,8 @@
 
 <!-- C.3. FOOTER -------------------------------------------------------------------------------------------------- -->
 
-<?php get_footer(); ?>
-
+<?php get_template_part( 'inc/page-footer' ); ?>
+        
 <!-- C.3. END ----------------------------------------------------------------------------------------------------- -->
 
 <!-- C. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ -->
