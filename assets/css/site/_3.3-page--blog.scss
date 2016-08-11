@@ -4,7 +4,14 @@
 
 // A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
 
-.single-post { img { max-width: 100%; height: auto; }}
+.single-post { height: auto; margin: 0;
+    img { max-width: 100%; height: auto; }}
+
+// A.1.1. Blog Landing Page -------------------------------
+
+.page-id-212 { background: $kd-royal; height: auto; margin: 0;
+    h1 { display: block; color: $white; }
+}
 
 .single-post,
 #page-id-212,
@@ -14,7 +21,6 @@
     
     margin: 0;
     margin-top: 240px;
-    background: $kd-royal; 
     
     .articles { padding-bottom: $baseline-medium; }
     

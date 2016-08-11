@@ -26,6 +26,7 @@ p { @include default-font(); font-size: $normal; }
 // A.1.1 LINKS
 
 a { cursor: pointer; }
+.btn-back { width: 60px; display: block; text-align: center;}
 
 // A.1.1. END
 

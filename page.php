@@ -11,6 +11,8 @@
         <?php while ( have_posts() ) : the_post(); ?>
             <?php get_template_part( 'content', 'page' ); ?>
         <?php endwhile; ?>
+        
+        <a class="button btn-blue btn-back" href="javascript: window.history.go(-1)">BACK</a>
 
     </div>
 

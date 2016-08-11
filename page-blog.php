@@ -10,7 +10,7 @@
         
         <!-- C.2.1. BLOG ARTICLE AREA ----------------- -->
         
-        <h1>PR &amp; Marketing</h1>
+        <h1><?php the_title(); ?></h1>
         
         <section class="articles grid">
 
