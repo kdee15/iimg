@@ -8,12 +8,18 @@
 #page-192,
 #page-195 {
     
-    margin-top: 240px;
+    margin-top: 195px;
+    background: $kd-lilac;
     
     .entry-header {
-        h1 { font-size: $x-large; margin-bottom: $baseline;
+        h1 { font-size: $x-large; margin: 0; display: block; padding: $baseline-large 0 $baseline-small;
             a { color: $kd-royal; }
         }
+    }
+    
+    .entry-content {
+        a { color: $kd-royal; font-weight: bold; }
+        .btn-blue { color: $white; }
     }
     
     .button { margin: $baseline-medium auto; }

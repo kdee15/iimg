@@ -2479,7 +2479,7 @@ figure {
         margin: 0;
         text-transform: uppercase;
         font-weight: bold;
-        color: #FF625F; }
+        color: #000A3F; }
 
 .modalClose {
   position: absolute;
@@ -3168,16 +3168,28 @@ figure {
 #page-206,
 #page-192,
 #page-195 {
-  margin-top: 240px; }
+  margin-top: 195px;
+  background: #E6EBF1; }
   #page-206 .entry-header h1,
   #page-192 .entry-header h1,
   #page-195 .entry-header h1 {
     font-size: 1.7em;
-    margin-bottom: 20px; }
+    margin: 0;
+    display: block;
+    padding: 80px 0 10px; }
     #page-206 .entry-header h1 a,
     #page-192 .entry-header h1 a,
     #page-195 .entry-header h1 a {
       color: #000A3F; }
+  #page-206 .entry-content a,
+  #page-192 .entry-content a,
+  #page-195 .entry-content a {
+    color: #000A3F;
+    font-weight: bold; }
+  #page-206 .entry-content .btn-blue,
+  #page-192 .entry-content .btn-blue,
+  #page-195 .entry-content .btn-blue {
+    color: #FFFFFF; }
   #page-206 .button,
   #page-192 .button,
   #page-195 .button {
