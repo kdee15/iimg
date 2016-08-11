@@ -3204,7 +3204,8 @@ figure {
 .single-post,
 #page-212,
 #page-193 {
-  margin-top: 240px; }
+  margin-top: 240px;
+  background: #000A3F; }
   .single-post .articles,
   #page-212 .articles,
   #page-193 .articles {
