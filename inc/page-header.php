@@ -64,8 +64,8 @@
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">What We Offer</a></li>
-                    <li><a class="pagelink" href="?page_id=212">What's News</a></li>
-                    <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
+                    <li><a class="pagelink" href="?page_id=213">What's News</a></li>
+                    <li><a class="pagelink" href="?page_id=215">Fine Print</a></li>
                     <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-contact">Talk to us</a></li>
 
                     <li>
@@ -119,8 +119,8 @@
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-our-vision">Our Vision</a></li>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-team">Meet the Team</a></li>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-services">What We Offer</a></li>
-                <li><a class="pagelink" href="?page_id=212">What's News</a></li>
-                <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
+                <li><a class="pagelink" href="?page_id=213">What's News</a></li>
+                <li><a class="pagelink" href="?page_id=215">Fine Print</a></li>
                 <li><a class="pagelink" href="<?php bloginfo('url'); ?>#section-contact">Talk to us</a></li>
 
             </ul>

@@ -63,8 +63,8 @@
                     <li><a class="textLink" href="#section-our-vision">Our Vision</a></li>
                     <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                     <li><a class="textLink" href="#section-services">What We Offer</a></li>
-                    <li><a class="pagelink" href="?page_id=212">What's News</a></li>
-                    <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
+                    <li><a class="pagelink" href="?page_id=213">What's News</a></li>
+                    <li><a class="pagelink" href="?page_id=215">Fine Print</a></li>
                     <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
 
                     <li>
@@ -118,8 +118,8 @@
                 <li><a class="textLink" href="#section-our-vision">Our Vision</a></li>
                 <li><a class="textLink" href="#section-team">Meet the Team</a></li>
                 <li><a class="textLink" href="#section-services">What We Offer</a></li>
-                <li><a class="pagelink" href="?page_id=212">What's News</a></li>
-                <li><a class="pagelink" href="?page_id=206">Fine Print</a></li>
+                <li><a class="pagelink" href="?page_id=213">What's News</a></li>
+                <li><a class="pagelink" href="?page_id=215">Fine Print</a></li>
                 <li><a class="textLink" href="#section-contact">Talk to Us</a></li>
 
             </ul>

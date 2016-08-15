@@ -9,14 +9,23 @@
 
 // A.1.1. Blog Landing Page -------------------------------
 
+.page-id-213,
 .page-id-212 { background: $kd-royal; height: auto; margin: 0;
-    h1 { display: block; color: $white; }
+    h1 { display: block; color: $white; a { color: $white; &:hover { color: $white; }}}
+    
+    .container { margin-bottom: $baseline-medium;
+        .btn-back { background: $kd-mauve; 
+            &:hover { background: $kd-lilac; }
+        }
+    }
 }
 
 .single-post,
 #page-id-212,
+#page-id-213,
 #page-id-193,
 #page-212,
+#page-213,
 #page-193 {
     
     margin: 0;

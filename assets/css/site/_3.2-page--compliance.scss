@@ -4,6 +4,7 @@
 
 // A.1. STRUCTURE -----------------------------------------------------------------------------------------------------
 
+#page-215,
 #page-206,
 #page-192,
 #page-195 {
@@ -12,7 +13,7 @@
     background: $kd-lilac;
     
     .entry-header {
-        h1 { font-size: $x-large; margin: 0; display: block; padding: $baseline-large 0 $baseline-small;
+        h1 { margin: 0; display: block; padding: $baseline-large 0 $baseline-small;
             a { color: $kd-royal; }
         }
     }
@@ -23,6 +24,8 @@
     }
     
     .button { margin: $baseline-medium auto; }
+    
+    .apss-social-share { display: none; }
     
 // A.1. END -----------------------------------------------------------------------------------------------------------
 

@@ -11,7 +11,7 @@
         <!-- C.2.1. BLOG ARTICLE AREA ----------------- -->
         
         <h1><?php the_title(); ?></h1>
-        <p>this page</p>
+        
         <section class="articles grid">
 
             <?php
