@@ -28,6 +28,9 @@ p { @include default-font(); font-size: $normal; }
 a { cursor: pointer; }
 .btn-back { width: 60px; display: block; text-align: center;}
 
+img.alignleft   { float: left; margin-right: $baseline; }
+img.alignright  { float: right; margin-left: $baseline; }
+
 // A.1.1. END
 
 // A.1.2. SECTIONS

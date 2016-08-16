@@ -1264,6 +1264,14 @@ a {
   display: block;
   text-align: center; }
 
+img.alignleft {
+  float: left;
+  margin-right: 20px; }
+
+img.alignright {
+  float: right;
+  margin-left: 20px; }
+
 .section {
   padding: 0;
   margin: 0; }
@@ -3152,7 +3160,7 @@ figure {
 
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
   .section-home {
-    padding-top: 170px;
+    padding-top: 60px;
     background-size: auto 100%;
     background-position: center center; }
     .section-home .section-header {
@@ -3160,11 +3168,11 @@ figure {
 
 @media only screen and (min-width: 1024px) {
   .section-home {
-    padding-top: 199px; } }
+    padding-top: 196px; } }
 
 @media only screen and (min-width: 1200px) {
   .section-home {
-    padding-top: 199px; } }
+    padding-top: 196px; } }
 
 @media only screen and (min-width: 321px) and (max-width: 480px) {
   .container {

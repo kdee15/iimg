@@ -80,7 +80,7 @@
 
     .section-home {
 
-        padding-top: 170px;
+        padding-top: 60px;
         background-size: auto 100%;
         background-position: center center;
 
@@ -98,7 +98,7 @@
 
 @include media-query(desk) { 
 
-    .section-home { padding-top: 199px; }
+    .section-home { padding-top: 196px; }
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
@@ -107,7 +107,7 @@
 
 @include media-query(desk-wide) { 
 
-    .section-home { padding-top: 199px; }
+    .section-home { padding-top: 196px; }
 }
 
 // E. END +++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
