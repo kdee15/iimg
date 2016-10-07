@@ -32,7 +32,7 @@
 
                         <div class="branch-info one-half">
                             
-                            <div class="wrapper">
+                            <div class="branch-wrapper">
                             
                                 <h3 class="city"><?php the_field('city') ?></h3>
                                 <h4 class="country"><?php the_field('country') ?></h4>

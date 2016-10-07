@@ -1276,6 +1276,14 @@ img.alignright {
   padding: 0;
   margin: 0; }
 
+.pager {
+  width: 100%;
+  clear: both;
+  padding: 20px 0; }
+  .pager li {
+    list-style-type: none;
+    display: inline-block; }
+
 .dropdown {
   position: absolute;
   top: 0;
@@ -1306,6 +1314,12 @@ figure {
     background: #000A3F;
     color: #FFFFFF; }
     .button.btn-blue:hover {
+      color: #FFFFFF;
+      background: #BBC5CE; }
+  .button.btn-grey {
+    background: #CCCCCC;
+    color: #000A3F; }
+    .button.btn-grey:hover {
       color: #FFFFFF;
       background: #BBC5CE; }
   .button.btn-blog {
@@ -3089,32 +3103,32 @@ figure {
       #section-contact .section__branches .branch .figure__image img {
         width: 100%;
         height: auto; }
-    #section-contact .section__branches .branch .branch-info .wrapper {
+    #section-contact .section__branches .branch .branch-info .branch-wrapper {
       margin: 0 20px; }
-      #section-contact .section__branches .branch .branch-info .wrapper h3, #section-contact .section__branches .branch .branch-info .wrapper p, #section-contact .section__branches .branch .branch-info .wrapper div {
+      #section-contact .section__branches .branch .branch-info .branch-wrapper h3, #section-contact .section__branches .branch .branch-info .branch-wrapper p, #section-contact .section__branches .branch .branch-info .branch-wrapper div {
         color: #FFFFFF; }
-      #section-contact .section__branches .branch .branch-info .wrapper h3 {
+      #section-contact .section__branches .branch .branch-info .branch-wrapper h3 {
         margin: 0;
         margin-bottom: 10px;
         font-size: 1.5em; }
-      #section-contact .section__branches .branch .branch-info .wrapper h4 {
+      #section-contact .section__branches .branch .branch-info .branch-wrapper h4 {
         margin: 0;
         margin-bottom: 10px;
         font-size: 1.125em;
         color: #BBC5CE; }
-      #section-contact .section__branches .branch .branch-info .wrapper p {
+      #section-contact .section__branches .branch .branch-info .branch-wrapper p {
         font-size: 1em;
         margin-bottom: 10px; }
-        #section-contact .section__branches .branch .branch-info .wrapper p.branch-item {
+        #section-contact .section__branches .branch .branch-info .branch-wrapper p.branch-item {
           padding-left: 30px;
           background-size: 20px 20px !important; }
-          #section-contact .section__branches .branch .branch-info .wrapper p.branch-item.tel {
+          #section-contact .section__branches .branch .branch-info .branch-wrapper p.branch-item.tel {
             background: url("../images/icons/icon--phone.svg") no-repeat top left; }
-          #section-contact .section__branches .branch .branch-info .wrapper p.branch-item.email {
+          #section-contact .section__branches .branch .branch-info .branch-wrapper p.branch-item.email {
             background: url("../images/icons/icon--email.svg") no-repeat top left; }
-          #section-contact .section__branches .branch .branch-info .wrapper p.branch-item.address {
+          #section-contact .section__branches .branch .branch-info .branch-wrapper p.branch-item.address {
             background: url("../images/icons/icon--location.svg") no-repeat top left; }
-        #section-contact .section__branches .branch .branch-info .wrapper p a {
+        #section-contact .section__branches .branch .branch-info .branch-wrapper p a {
           color: #FFFFFF; }
 
 @media only screen and (max-width: 320px) {
